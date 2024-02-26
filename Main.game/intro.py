@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------------
 # ONNIN SPAGETTI KOODIA
-import Asciiartfunc
+from Asciiartfunc import welcome_text_to_ascii
 
 def intro(): # Intro funktio TestiTestiTesti
-    welcome_text_ascii()
+    welcome_text_to_ascii()
     while True: # Looppi joka kysyy käyttäjältä haluaako hän aloittaa pelin, jos vastaus on "yes" peli alkaa, jos "no" peli loppuu. Muussa tapauksessa kysytään uudelleen.
         intro_input = input("Do you wish to Start the game? (yes/no): \n").lower()
         if intro_input == "yes":
