@@ -1,4 +1,4 @@
-def intro(): # Intro funktio testi
+def intro(): # Intro funktio TestiTestiTesti
     print('''
  \ \      / /__| | ___ ___  _ __ ___   ___| |
   \ \ /\ / / _ \ |/ __/ _ \| '_ ` _ \ / _ \ |
@@ -20,7 +20,7 @@ def airplane_model_choice(): #Funktio lentokonemallin valintaan
     else:
         print("Invalid input, please try again")
 
-def intro_airplane_func(): #Funktio joka kutsuu intro ja airplane_model_choice funktiot Testinä
+def intro_airplane_func(): #Funktio joka kutsuu molemmat "intro ja airplane_model_choice" funktiot
     intro()
     airplane_model_choice()
     
