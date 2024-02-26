@@ -4,12 +4,17 @@ def intro(): # Intro funktio TestiTestiTesti
   \ \ /\ / / _ \ |/ __/ _ \| '_ ` _ \ / _ \ |
    \ V  V /  __/ | (_| (_) | | | | | |  __/_|
     \_/\_/ \___|_|\___\___/|_| |_| |_|\___(_)''')
-        
-    intro_prompt = input("Do you wish to Start the game? (yes/no): \n").lower()
-    if intro_prompt == "yes":
-        print("Great! Let's get started!")
-    elif intro_prompt == "no":
-        print("Goodbye!")
+    while True: # Looppi joka kysyy käyttäjältä haluaako hän aloittaa pelin, jos vastaus on "yes" peli alkaa, jos "no" peli loppuu. Muussa tapauksessa kysytään uudelleen.
+        intro_prompt = input("Do you wish to Start the game? (yes/no): \n").lower()
+        if intro_prompt == "yes":
+            print("Great! Let's get started!")
+            break
+        elif intro_prompt == "no":
+            print("Goodbye!")
+            return
+        else:
+            print("Invalid input, please try again")
+
 
 def airplane_model_choice(): #Funktio lentokonemallin valintaan
     airplane_model = input("Choose your airplane model: \n 1. Boeing 737 \n 2. Airbus A320 \n").lower()
@@ -20,7 +25,7 @@ def airplane_model_choice(): #Funktio lentokonemallin valintaan
     else:
         print("Invalid input, please try again")
 
-def intro_airplane_func(): #Funktio joka kutsuu molemmat "intro ja airplane_model_choice" funktiot
+def intro_airplane_func(): #Funktio joka kutsuu molemmat "intro ja airplane_model_choice" funktiot <--- muutentaan myöhemmin main() funktioksi
     intro()
     airplane_model_choice()
     
