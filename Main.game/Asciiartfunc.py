@@ -14,3 +14,10 @@ def text_to_ascii(text, style='standard'):
 text = "Testi"
 ascii_art = text_to_ascii(text, style='standard')
 print(ascii_art)
+
+
+
+def welcome_text__to_ascii(): # WELCOME ASCII 
+    welcome_text = "Welcome!"
+    ascii_art = text_to_ascii(welcome_text, style='standard')
+    print(ascii_art)
