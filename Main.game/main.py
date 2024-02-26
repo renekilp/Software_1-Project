@@ -1,3 +1,6 @@
+"""
 bonjour
-Hallo
-Kuka poisti
+Hallo, miehet
+Morjesta pöytään - Onni
+
+"""
