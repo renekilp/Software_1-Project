@@ -20,7 +20,7 @@ def intro(): # Intro funktio TestiTestiTesti
 
 def airplane_model_choice(): #Funktio lentokonemallin valintaan. Kysyy käyttäjältä haluamansa lentokonemallin ja tulostaa valinnan. Jos käyttäjä antaa väärän syötteen, pyytää syöttämään uudelleen.
     while True: 
-        airplane_model_input = input("Choose your airplane model (1-3): \n 1. Boeing 737 \n 2. Airbus A320 \n 3. JOTAIN VIELÄ \n").lower()
+        airplane_model_input = input("Choose your airplane model (1-3): \n 1. Boeing 737 \n 2. Airbus A320 \n 3. Saab JA 37 Viggen \n").lower()
         if airplane_model_input == "1":
             print("You have chosen the Boeing 737.")
             break
@@ -28,7 +28,7 @@ def airplane_model_choice(): #Funktio lentokonemallin valintaan. Kysyy käyttäj
             print("You have chosen the Airbus A320.")
             break
         elif airplane_model_input == "3":
-            print("You have chosen the JOTAIN VIELÄ.")
+            print("You have chosen the Saab JA 37 Viggen .")
             break
         else:
             print("\nInvalid input, please try again:")
