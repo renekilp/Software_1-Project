@@ -1,4 +1,5 @@
 from art import *
+from colorama import Fore, Back, Style
 
 def text_to_ascii(text, style='standard'):
     if style == 'standard':
@@ -15,10 +16,11 @@ def text_to_ascii(text, style='standard'):
 #   text = "Testi"
 #   ascii_art = text_to_ascii(text, style='standard')
 #   print(ascii_art)
-#   testi
+
 
 
 def welcome_text_to_ascii(): # WELCOME ASCII 
     welcome_text = "Welcome!"
     ascii_art = text_to_ascii(welcome_text, style='standard')
-    print(ascii_art)
+    print(Fore.BLUE + ascii_art)
+    print(Style.RESET_ALL)

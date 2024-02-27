@@ -1,8 +1,9 @@
 #-------------------------------------------------------------------------------
 # ONNIN SPAGETTI KOODIA
 
+import time
+from colorama import Fore, Back, Style
 from Asciiartfunc import welcome_text_to_ascii # Tuodaan Asciiartfunc.py tiedostosta welcome_text_to_ascii() funktio tähän tiedostoon.
-
 
 def intro(): # Intro funktio TestiTestiTesti
     welcome_text_to_ascii() # Kutsutaan Asciiartfunc.py tiedostosta welcome_text_to_ascii() funktiota, jolla saadaan hieno ASCII taideteos.
