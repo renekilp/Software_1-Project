@@ -23,16 +23,20 @@ def airplane_model_choice(): #Funktio lentokonemallin valintaan. Kysyy käyttäj
     while True: 
         airplane_model_input = input("Choose your airplane model (1-3): \n 1. Boeing 737 \n 2. Airbus A320 \n 3. Saab JA 37 Viggen \n").lower()
         if airplane_model_input == "1":
-            print("You have chosen the Boeing 737.")
+            print(f"{Fore.WHITE}\nBoeing 737: {Fore.YELLOW}{Style.BRIGHT}\nThe Boeing 737 is a narrow-body aircraft produced by Boeing Commercial Airplanes at its Renton Factory in Washington.")
+            print(Style.RESET_ALL + Fore.RESET + Back.RESET)
             break
         elif airplane_model_input == "2":
-            print("You have chosen the Airbus A320.")
+            print(f"{Fore.WHITE}\nAirbus A320: {Fore.YELLOW}{Style.BRIGHT}\nThe Airbus A320 family are narrow-body airliners designed and produced by Airbus.")
+            print(Style.RESET_ALL + Fore.RESET + Back.RESET)
             break
         elif airplane_model_input == "3":
-            print("You have chosen the Saab JA 37 Viggen.")
+            print(f"{Fore.WHITE}\nYou have chosen the Saab JA 37 Viggen: {Fore.YELLOW}{Style.BRIGHT}\nThe Saab 37 Viggen is a retired Swedish single-seat, single-engine, short-medium range combat aircraft.")
+            print(Style.RESET_ALL + Fore.RESET + Back.RESET)
             break
         else:
             print("\nInvalid input, please try again:")
+            print(Style.RESET_ALL + Fore.RESET + Back.RESET)
 
 
 def intro_airplane_func(): #Funktio joka kutsuu molemmat "intro ja airplane_model_choice" funktiot <--- siirretään myöhemmin main() funktioon.
