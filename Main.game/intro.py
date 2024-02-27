@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------------
-# ONNIN SPAGETTI KOODIA + RENEN UPEAT SOOSIT
+# ONNIN SPAGETTI KOODIA + RANEN UPEAT SOOSIT
 
 import time
 from colorama import Fore, Back, Style
