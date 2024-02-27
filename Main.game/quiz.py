@@ -78,8 +78,8 @@ def quiz_asker (quiz_questions):
     r_answers.append(q_answer)
     random.shuffle(r_answers)
     print(f"{question}")
-    for i, answer in enumerate(r_answers, start=1):
-        print(f"{i}. {answer}")
+    for i in range(4):
+        print(f"{i + 1}. {r_answers[i]}")
     user_answer = input("What is the correct answer? (1, 2, 3, 4, 5): \n")
     asked_question.append(question_number)
     if user_answer == str(r_answers.index(q_answer) + 1):
