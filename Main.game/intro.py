@@ -28,7 +28,7 @@ def airplane_model_choice(): #Funktio lentokonemallin valintaan. Kysyy käyttäj
             print("You have chosen the Airbus A320.")
             break
         elif airplane_model_input == "3":
-            print("You have chosen the Saab JA 37 Viggen .")
+            print("You have chosen the Saab JA 37 Viggen.")
             break
         else:
             print("\nInvalid input, please try again:")
