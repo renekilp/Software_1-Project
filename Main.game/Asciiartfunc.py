@@ -10,11 +10,11 @@ def text_to_ascii(text, style='standard'):
     else:
         return "Invalid style specified"
 
-#Laitoin nää kommentteihin, koska kun importtasin welcome_text_to_ascii() niin tuli erroria, koska nää alapuoliset rivit oli "hardcoded".
-
-#text = "Testi" 
-#ascii_art = text_to_ascii(text, style='standard')
-#print(ascii_art)
+#   Laitoin nää kommentteihin, koska kun importtasin welcome_text_to_ascii() niin tuli erroria, koska nää alapuoliset rivit oli "hardcoded".
+#   jos haluutte lisää uuden ascii tyylin, nii lisätkää vaa uus elif style == haluttu tyyli
+#   text = "Testi"
+#   ascii_art = text_to_ascii(text, style='standard')
+#   print(ascii_art)
 
 
 
