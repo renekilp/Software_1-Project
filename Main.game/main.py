@@ -1,4 +1,4 @@
-import Asciiartfunc.py
+import Asciiartfunc
 import math
 from geopy.distance import geodesic
 import mysql.connector
