@@ -1,7 +1,9 @@
 import Asciiartfunc
-import math
 from geopy.distance import geodesic
+import math
 import mysql.connector
+import quiz
+
 
 connection = mysql.connector.connect(
     host="localhost",
