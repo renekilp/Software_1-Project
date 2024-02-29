@@ -68,21 +68,21 @@ random_answers = [
     "Mexico City", "Lysosome", "GBP"]
 asked_question = []
 def quiz_asker (quiz_questions):
-    length = len(quiz_questions)
-    question_number = random.randint(0,length - 1)
-    while question_number in asked_question:
+    length = len(quiz_questions) #monta kysymystä on
+    question_number = random.randint(0,length - 1) #"valitsee" randomin kysymyksen
+    while question_number in asked_question:#tarkistaa, että kysymystä ei ole kysytty aikaisemmin
         question_number = random.randint(0, length - 1)
-    question = quiz_questions[question_number]
-    q_answer = quiz_answers[question_number]
-    r_answers = random.sample(random_answers, 4)
+    question = quiz_questions[question_number] #hakee kysymyksen
+    q_answer = quiz_answers[question_number] #kysymyksen vastaus
+    r_answers = random.sample(random_answers, 4) #hakee random vastauksista 4
     r_answers.append(q_answer)
-    random.shuffle(r_answers)
+    random.shuffle(r_answers) #muuttaa random vastauksien järjestyksen
     print(f"{question}")
-    for i in range(4):
+    for i in range(4): #randomaa vastauksen random vastausten kanssa sekaisin
         print(f"{i + 1}. {r_answers[i]}")
     user_answer = input("What is the correct answer? (1, 2, 3, 4, 5): \n")
-    asked_question.append(question_number)
-    if user_answer == str(r_answers.index(q_answer) + 1):
+    asked_question.append(question_number) #"merkkaa" kysytyn kysymyksen kysytyksi
+    if user_answer == str(r_answers.index(q_answer) + 1): #jos vastaus oikein, muuten väärin
         print("CORRECT")
         return 1
     else:
