@@ -9,12 +9,12 @@ from Asciiartfunc import welcome_text_to_ascii # Tuodaan Asciiartfunc.py tiedost
 #{Back.VÄRI} = Taustan väri
 #{Style.--} = Tekstin tyyli
 
-def intro():
+def starting_screen():
     """
-    Funktio näyttää tervetuloa-tekstin ASCII-taiteena ja kysyy käyttäjältä, haluaako hän aloittaa pelin.
+    Funktio näyttää tervetuloa-tekstin ASCIna ja kysyy käyttäjältä, haluaako hän aloittaa pelin.
     Jos vastaus on "yes", peli alkaa.
     Jos vastaus on "no", peli loppuu.
-    Jos syötä mitä tahansa muuta, while-looppia jatketaan, kunnes käyttäjä antaa oikean syötteen.
+    Jos syötä mitä tahansa muuta, while-looppia jatketaan, kunnes käyttäjä antaa jommankumman syötteen.
     """ 
     welcome_text_to_ascii() 
     while True:
@@ -33,7 +33,7 @@ def intro():
 
 def airplane_model_choice(): 
     """"
-    #Funktio lentokonemallin valintaan. 
+    Funktio lentokonemallin valintaan. 
     Kysyy käyttäjältä haluamansa lentokonemallin ja tulostaa valinnan. 
     Jos käyttäjä antaa väärän syötteen, loopilla pyydetään syöttämään uudelleen.
     """
@@ -57,15 +57,15 @@ def airplane_model_choice():
             print(Style.RESET_ALL + Fore.RESET + Back.RESET)
 
 
-def intro_airplane_func(): 
+def intro(): 
     """
     Funktio joka kutsuu molemmat "intro ja airplane_model_choice" funktiot <--- siirretään myöhemmin main() funktioon.
     Tässä kohtaa testataan, että jos alussa sanotaan "no" niin peli loppuu, muussa tapauksessa kutsutaan airplane_model_choice() funktiota.
     Jos intro() palauttaa True, kutsutaan airplane_model_choice() funktiota.
     """
-    if intro(): 
+    if starting_screen(): 
         airplane_model_choice()
     
 
-intro_airplane_func() # Testataaan 
+intro() # Testataaan 
 
