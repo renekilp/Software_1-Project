@@ -1,13 +1,14 @@
 import mysql.connector
 
-connection = mysql.connector.connect(
+def sql_connection(): # Tein tästä funktion -Onni
+    connection = mysql.connector.connect(
     host="localhost",
     port=3306,
     database="flight_game",
     user="root",
     password="root",
     autocommit=True
-)
+    )
 
 def search_large_airports(): # hakee isojen lentokenttien nimet ja sijainnin
     sql = "SELECT name,latitude_deg,longitude_deg FROM airport where type = 'large_airport'"
