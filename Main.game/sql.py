@@ -9,12 +9,20 @@ connection = mysql.connector.connect(
     password="root",
     autocommit=True
 )
+def query_database(sql,fetchall=True): #Tein täst funktion, niin ei tarvi aina tehä cursor ja execute
+    cursor = connection.cursor()
+    cursor.execute(sql)
+    
+    if fetchall:
+        return cursor.fetchall()
+    else:
+        return cursor.fetchone()
+
+# query_database("SELECT * FROM airport") TestiTesti
 
 def search_large_airports(): # hakee isojen lentokenttien nimet ja sijainnin
     sql = "SELECT name,latitude_deg,longitude_deg FROM airport where type = 'large_airport'"
-    cursor = connection.cursor()
-    cursor.execute(sql)
-    airports = cursor.fetchall()
+    airports = query_database(sql) # airports = suoritetaan query_database funktio, joka hakee tietokannasta tiedot annetulla sql muuttujalla
     if len(airports) == 0:
         print("Airports not found")
     else:
