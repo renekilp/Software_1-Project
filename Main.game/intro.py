@@ -83,5 +83,5 @@ def intro():
         airplane_model_choice()
     
 
-intro() # Testataaan 
+#intro() # Testataaan 
 
