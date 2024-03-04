@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e4b38d3-fc93-40e7-a97f-329f57970363" name="Changes" comment="created a new .py file for helpscreen">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.game/helpscreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.game/helpscreen.py" afterDir="false" />
-    </list>
+    <list default="true" id="4e4b38d3-fc93-40e7-a97f-329f57970363" name="Changes" comment="import quiz.py" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +106,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
       </set>
     </attachedChunks>
   </component>
@@ -200,7 +197,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709025700633</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="quiz asker commments and explanation">
+      <option name="closed" value="true" />
+      <created>1709190963080</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709190963080</updated>
+    </task>
+    <task id="LOCAL-00011" summary="import quiz.py">
+      <option name="closed" value="true" />
+      <created>1709191106555</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709191106555</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +227,9 @@
     <MESSAGE value="tweaked some of the comments" />
     <MESSAGE value="added a new comment" />
     <MESSAGE value="created a new .py file for helpscreen" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a new .py file for helpscreen" />
+    <MESSAGE value="quiz asker commments and explanation" />
+    <MESSAGE value="import quiz.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="import quiz.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Ohjelmisto1_Projekti$Asciiartfunc.coverage" NAME="Asciiartfunc Coverage Results" MODIFIED="1709024939636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main.game" />
