@@ -24,3 +24,15 @@ def welcome_text_to_ascii(): # WELCOME ASCII
     ascii_art = text_to_ascii(welcome_text, style='standard')
     print(Fore.BLUE + ascii_art)
     print(Style.RESET_ALL)
+
+def tutorial_ascii():
+    welcome_text = "TUTORIAL"
+    ascii_art = text_to_ascii(welcome_text, style='standard')
+    print(Fore.GREEN + ascii_art)
+    print(Style.RESET_ALL)
+
+def slowly_generate_print(text, delay=0.1):
+    for char in text:
+        print(char, end='', flush=True)
+        time.sleep(delay)
+    print()
