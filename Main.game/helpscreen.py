@@ -36,7 +36,8 @@ def tutorial_screen():
         "\nRemember that you can always use the 'help' command if you find yourself stuck."
     )
 
-def player_info:
+def player_info():
+    pass
 
 
 
@@ -47,6 +48,7 @@ def player_info:
 
 
 
-tutorial_screen()
+def tutorial_screen():
+    pass
 
 #   exit, tutorial, player information, credits
