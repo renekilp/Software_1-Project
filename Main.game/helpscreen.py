@@ -36,6 +36,10 @@ def tutorial_screen():
         "\nRemember that you can always use the 'help' command if you find yourself stuck."
     )
 
+def player_info:
+
+
+
 
 
 

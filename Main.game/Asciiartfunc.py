@@ -1,21 +1,23 @@
 from art import *
 from colorama import Fore, Back, Style
+import time
 
 def text_to_ascii(text, style='standard'):
+    #   Korvaa parametri 'text' halutulla tekstillä
+    #   Korvaa parametri 'style' halutulla tyylillä
     if style == 'standard':
         return text2art(text)
     elif style == 'block':
         return text2art(text, font='block')
     elif style == 'banner':
         return text2art(text, font='banner3')
+    #   Tähän funktioon lisätty alustavasti vain 3 esimerrki tyyliä
+    #   Luo uusi elif lause, jos haluat uuden tyylin
     else:
         return "Invalid style specified"
 
 #   Laitoin nää kommentteihin, koska kun importtasin welcome_text_to_ascii() niin tuli erroria, koska nää alapuoliset rivit oli "hardcoded".
-#   jos haluutte lisää uuden ascii tyylin, nii lisätkää vaa uus elif style == haluttu tyyli
-#   text = "Testi"
-#   ascii_art = text_to_ascii(text, style='standard')
-#   print(ascii_art)
+
 
 
 
