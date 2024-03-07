@@ -84,7 +84,7 @@ def quiz_asker ():
     asked_question.append(question_number) #"merkkaa" kysytyn kysymyksen kysytyksi
     if user_answer == str(r_answers.index(q_answer) + 1): #jos vastaus oikein, muuten väärin
         print("CORRECT")
-        return 1
+        return True
     else:
-        print("FALSE")
-        return 0
+        print("INCORRECT")
+        return False
