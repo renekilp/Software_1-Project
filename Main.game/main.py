@@ -19,6 +19,9 @@ def main():
 
 main()
 score = 0
+distance = 0
+time = 0
+co2_used = 0
 search = search_large_airports()
 airplane_model = airplane_model_choice()
 current_airport = random_fly()
