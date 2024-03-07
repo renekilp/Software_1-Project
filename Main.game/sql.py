@@ -49,13 +49,13 @@ def travel_co2(user_airport, airplane_model_input):
     current_coordinates = [user_airport[1], user_airport[2]]
     distance = geodesic(next_coordinates, current_coordinates).kilometers
     if airplane_model_input == "1": #airbus a320
-        co2 = distance * 32.2 #grammaa per kilometri
+        co2 = distance * 62.5 #grammaa per kilometri
         flight_time = distance / 830 #kmh
     elif airplane_model_input == "2": #boeing 737
-        co2 = distance * 115
+        co2 = distance * 61
         flight_time = distance / 845
     elif airplane_model_input == "3": #saab ja37 viggen
-        co2 = distance * 126
+        co2 = distance * 435
         flight_time = distance / 2231
     elif airplane_model_input == "Peltoniemi" or "Peyman":
         co2 = distance * 0.45
