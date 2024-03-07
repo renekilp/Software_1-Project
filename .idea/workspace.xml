@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e4b38d3-fc93-40e7-a97f-329f57970363" name="Changes" comment="import quiz.py">
+    <list default="true" id="4e4b38d3-fc93-40e7-a97f-329f57970363" name="Changes" comment="tweaked few lines">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.game/Asciiartfunc.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.game/Asciiartfunc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.game/helpscreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.game/helpscreen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +41,7 @@
   &quot;keyToString&quot;: {
     &quot;Python.helpscreen.executor&quot;: &quot;Run&quot;,
     &quot;Python.intro.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -48,7 +50,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -100,16 +102,40 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Ohjelmisto1-Projekti" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main.game" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.game/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.helpscreen" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
       </set>
     </attachedChunks>
   </component>
@@ -127,6 +153,7 @@
       <workItem from="1708971958428" duration="396000" />
       <workItem from="1708973167057" duration="706000" />
       <workItem from="1709028606932" duration="1317000" />
+      <workItem from="1709804522041" duration="4436000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -216,7 +243,39 @@
       <option name="project" value="LOCAL" />
       <updated>1709191106555</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="tweaked some line in helpscreen.py">
+      <option name="closed" value="true" />
+      <created>1709552362468</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709552362468</updated>
+    </task>
+    <task id="LOCAL-00013" summary="tweaked some line in helpscreen.py">
+      <option name="closed" value="true" />
+      <created>1709555938809</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709555938809</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added few new comments">
+      <option name="closed" value="true" />
+      <created>1709805063036</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1709805063036</updated>
+    </task>
+    <task id="LOCAL-00015" summary="tweaked few lines">
+      <option name="closed" value="true" />
+      <created>1709805653750</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1709805653751</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,11 +302,15 @@
     <MESSAGE value="created a new .py file for helpscreen" />
     <MESSAGE value="quiz asker commments and explanation" />
     <MESSAGE value="import quiz.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="import quiz.py" />
+    <MESSAGE value="tweaked some line in helpscreen.py" />
+    <MESSAGE value="added few new comments" />
+    <MESSAGE value="tweaked few lines" />
+    <option name="LAST_COMMIT_MESSAGE" value="tweaked few lines" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Ohjelmisto1_Projekti$Asciiartfunc.coverage" NAME="Asciiartfunc Coverage Results" MODIFIED="1709024939636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main.game" />
-    <SUITE FILE_PATH="coverage/Ohjelmisto1_Projekti$helpscreen.coverage" NAME="helpscreen Coverage Results" MODIFIED="1709552245225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main.game" />
-    <SUITE FILE_PATH="coverage/Ohjelmisto1_Projekti$intro.coverage" NAME="intro Coverage Results" MODIFIED="1709549731603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main.game" />
+    <SUITE FILE_PATH="coverage/Ohjelmisto1_Projekti$helpscreen.coverage" NAME="helpscreen Coverage Results" MODIFIED="1709808341972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main.game" />
+    <SUITE FILE_PATH="coverage/Ohjelmisto1_Projekti$intro.coverage" NAME="intro Coverage Results" MODIFIED="1709555436420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main.game" />
+    <SUITE FILE_PATH="coverage/Ohjelmisto1_Projekti$main.coverage" NAME="main Coverage Results" MODIFIED="1709805853939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Main.game" />
   </component>
 </project>

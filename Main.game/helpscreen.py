@@ -1,5 +1,5 @@
 from colorama import *
-from Asciiartfunc import tutorial_ascii
+from asciiartfunc import tutorial_ascii
 
 
 
@@ -26,29 +26,31 @@ def help_screen():
 
 def tutorial_screen():
     tutorial_ascii()
-    print(
-        "First you have to choose a plane. The only difference between the planes is the co2 usage (and your own preference).\n"
-        "\nYour main goal is to hop from airport to airport. You as a player is bombarded with offbeat trivia questions about each country you visit.\n"
-        "Your journey will be filled with laughter and learning. But remember, with only one wrong answer, your plane will make an emergency landing "
-        "ending your journey...\n"
-        "How far can you reach without making a mistake? Let's find out!\n"
-        "\nAfter the game ends, your will be scored based on the points, distance and co2 usage.\n"
-        "\nRemember that you can always use the 'help' command if you find yourself stuck."
-    )
-
-def player_info():
-    pass
-
-
+    tut_text = """
+    First you have to choose a plane. The only difference between the planes is the co2 usage (and your own preference).
+    Your main goal is to hop from airport to airport. You as a player is bombarded with offbeat trivia questions about each country you visit.
+    Your journey will be filled with laughter and learning. But remember, with only one wrong answer, your plane will make an emergency landing 
+    ending your journey...
+    
+    How far can you reach without making a mistake? Let's find out!
+    After the game ends, your will be scored based on the points, distance and co2 usage.
+    
+    Remember that you can always use the 'help' command if you find yourself stuck.
+    """
+    slowly_generate_print(tut_text, delay=0.015)
 
 
-
+def player_info:
 
 
 
 
 
-def tutorial_screen():
-    pass
+
+
+
+
+
+tutorial_screen()
 
 #   exit, tutorial, player information, credits

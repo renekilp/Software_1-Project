@@ -28,10 +28,22 @@ def welcome_text_to_ascii(): # WELCOME ASCII
     print(Style.RESET_ALL)
 
 def tutorial_ascii():
-    welcome_text = "TUTORIAL"
-    ascii_art = text_to_ascii(welcome_text, style='standard')
+    tutorial_text = "TUTORIAL"
+    ascii_art = text_to_ascii(tutorial_text, style='banner')
+    print(Fore.GREEN + "-" * 92 + "\n")
     print(Fore.GREEN + ascii_art)
+    print(Fore.GREEN + "-" * 92)
     print(Style.RESET_ALL)
+
+def playerinfo_ascii():
+    player_text = "PLAYER INFO"
+    ascii_art = text_to_ascii(player_text, style='banner')
+    print(Fore.GREEN + "-" * 92 + "\n")
+    print(Fore.GREEN + ascii_art)
+    print(Fore.GREEN + "-" * 92)
+    print(Style.RESET_ALL)
+
+
 
 def slowly_generate_print(text, delay=0.1):
     for char in text:
