@@ -25,9 +25,8 @@ def search_large_airports(): # hakee isojen lentokenttien nimet ja sijainnin
     sql = "SELECT name,latitude_deg,longitude_deg FROM airport where type = 'large_airport'"
     airports = query_database(sql) # airports = suoritetaan query_database funktio, joka hakee tietokannasta tiedot annetulla sql muuttujalla
     if len(airports) == 0:
-        print("Airports not found")
+        pass
     else:
-        print("Airports found")
         return airports
 
 def new_score(player_name,score): #tallentaa uuden pistemäärän tietokantaan
