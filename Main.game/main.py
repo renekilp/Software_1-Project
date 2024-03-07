@@ -2,7 +2,6 @@ import asciiartfunc
 from geopy.distance import geodesic
 import math
 import mysql.connector
-from connection import connector
 import gameintro
 import helpscreen
 import quiz
