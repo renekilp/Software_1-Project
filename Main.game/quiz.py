@@ -88,7 +88,3 @@ def quiz_asker ():
     else:
         print("FALSE")
         return 0
-
-
-#result = quiz_asker(quiz_questions)
-#print(f"Result: {result}")
