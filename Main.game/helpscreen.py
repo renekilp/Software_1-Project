@@ -1,5 +1,5 @@
 from colorama import *
-from asciiartfunc import tutorial_ascii
+from asciiartfunc import *
 
 
 
@@ -40,7 +40,8 @@ def tutorial_screen():
     slowly_generate_print(tut_text, delay=0.015)
 
 
-def player_info:
+def player_info():
+    playerinfo_ascii()
 
 
 
@@ -51,6 +52,7 @@ def player_info:
 
 
 
-player_info()
+
+tutorial_screen()
 
 #   exit, tutorial, player information, credits
