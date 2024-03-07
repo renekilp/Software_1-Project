@@ -48,6 +48,8 @@ def travel_co2(user_airport, airplane_model_input): #laskee lentoajan, co2 pää
     next_coordinates = [next_airport[1], next_airport[2]]
     current_coordinates = [user_airport[1], user_airport[2]]
     distance = geodesic(next_coordinates, current_coordinates).kilometers
+    co2 = 0
+    flight_time = 0
     if airplane_model_input == "1": #airbus a320
         co2 = distance * 62.5 #grammaa per kilometri
         flight_time = distance / 830 #kmh
@@ -62,4 +64,6 @@ def travel_co2(user_airport, airplane_model_input): #laskee lentoajan, co2 pää
         flight_time = distance / 6
     else:
         print("Invalid airplane, cant calculate emission and distance")
-    return distance, co2, flight_time
+
+    results = [distance, co2, flight_time]
+    return results
