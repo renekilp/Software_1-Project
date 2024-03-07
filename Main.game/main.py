@@ -14,14 +14,12 @@ from intro import intro #kutsutaan intro funktio tänne.
 from intro import airplane_model_choice
 
 # testataan main funktion toimintaa
-def main():
-    intro()
 
-main()
 score = 0
 distance = 0
 used_time = 0
 co2_used = 0
+starting_screen()
 search = search_large_airports()
 airplane_model = airplane_model_choice()
 current_airport = random_fly()
