@@ -18,7 +18,7 @@ airplane_model = gameintro.airplane_model_choice()
 
 while game_going:
 
-    # pelaajan komennot functiot
+    # pelaajan komento functiot
 
 
     if quiz.quiz_asker():
