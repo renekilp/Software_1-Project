@@ -15,7 +15,7 @@ distance = 0
 used_time = 0
 co2_used = 0
 
-gameintro.starting_screen()
+#gameintro.starting_screen()
 
 search = gamesql.search_large_airports()
 airplane_model = gameintro.airplane_model_choice()
@@ -25,8 +25,4 @@ travel_result = gamesql.travel_co2(current_airport, airplane_model)
 distance = distance + travel_result[0]
 co2_used = co2_used + travel_result[1]
 used_time = used_time + travel_result[2]
-quiz.quiz_asker()
-if quiz.quiz_asker() == 1:
-    score += 1
-elif quiz.quiz_asker() == 0:
-    pass
+
