@@ -48,7 +48,6 @@ def airplane_model_choice():
             print(f"{Fore.RED}The Saab 37 Viggen {Fore.GREEN}is a retired Swedish single-seat, single-engine, short-medium range combat aircraft.")
             print("-------------------------------------------------------------------------------")
             print(Style.RESET_ALL + Fore.RESET + Back.RESET)   
-            return airplane_model_choice()
         
         elif airplane_model_input == "1":
             print(f"{Fore.GREEN}\nYou have chosen the {Fore.CYAN}Boeing 737")
@@ -81,7 +80,5 @@ def intro():
     """
     if starting_screen(): 
         airplane_model_choice()
-    
 
-intro() # Testataaan 
-
+intro() # Kutsutaan intro() funktio.
