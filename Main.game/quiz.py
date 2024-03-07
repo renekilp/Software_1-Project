@@ -90,5 +90,5 @@ def quiz_asker (quiz_questions):
         return 0
 
 
-result = quiz_asker(quiz_questions)
-print(f"Result: {result}")
+#result = quiz_asker(quiz_questions)
+#print(f"Result: {result}")
