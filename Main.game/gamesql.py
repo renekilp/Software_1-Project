@@ -64,5 +64,5 @@ def travel_co2(user_airport, airplane_model_input): #laskee lentoajan, co2 pää
     else:
         print("Invalid airplane, cant calculate emission and distance")
 
-    results = [distance, co2, flight_time]
+    results = [distance, co2, flight_time, next_airport]
     return results
