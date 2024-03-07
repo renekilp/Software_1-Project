@@ -11,7 +11,7 @@ import sql
 #import quiz <<- pitää kutsua tyyppisesti from quiz import quiz_asker tms. -onni
 
 from intro import intro #kutsutaan intro funktio tänne.
-from intor import airplane_model_choice
+from intro import airplane_model_choice
 
 # testataan main funktion toimintaa
 def main():
