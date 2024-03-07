@@ -80,5 +80,3 @@ def intro():
     """
     if starting_screen(): 
         airplane_model_choice()
-
-intro() # Kutsutaan intro() funktio.
