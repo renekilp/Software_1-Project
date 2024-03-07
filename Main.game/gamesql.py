@@ -37,13 +37,13 @@ def new_score(player_name,score): #tallentaa uuden pistemäärän tietokantaan
     if cursor.rowcount == 1:
         print("New score added")
 
-def random_fly():
+def random_fly(): #lennättää pelaajan uudelle random lentokentälle
     possible_airports = search_large_airports()
     airport_number = random.randint(0,len(possible_airports)-1)
     user_airport = possible_airports[airport_number]
     return user_airport
 
-def travel_co2(user_airport, airplane_model_input):
+def travel_co2(user_airport, airplane_model_input): #laskee lentoajan, co2 päästöt ja matkan
     next_airport = random_fly()
     next_coordinates = [next_airport[1], next_airport[2]]
     current_coordinates = [user_airport[1], user_airport[2]]
