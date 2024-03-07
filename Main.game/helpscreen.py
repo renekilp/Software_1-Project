@@ -51,6 +51,6 @@ def player_info:
 
 
 
-tutorial_screen()
+player_info()
 
 #   exit, tutorial, player information, credits

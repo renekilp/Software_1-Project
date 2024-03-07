@@ -50,3 +50,5 @@ def slowly_generate_print(text, delay=0.1):
         print(char, end='', flush=True)
         time.sleep(delay)
     print()
+
+#
