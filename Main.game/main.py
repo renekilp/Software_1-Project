@@ -1,7 +1,3 @@
-import asciiartfunc
-from geopy.distance import geodesic
-import math
-import mysql.connector
 import gameintro
 import quiz
 import gamesql
@@ -14,15 +10,21 @@ score = 0
 distance = 0
 used_time = 0
 co2_used = 0
-
-#gameintro.starting_screen()
-
-search = gamesql.search_large_airports()
-airplane_model = gameintro.airplane_model_choice()
 current_airport = gamesql.random_fly()
-print(f"You are in {current_airport [0]}!")
-travel_result = gamesql.travel_co2(current_airport, airplane_model)
-distance = distance + travel_result[0]
-co2_used = co2_used + travel_result[1]
-used_time = used_time + travel_result[2]
+game_going = True
 
+gameintro.starting_screen()
+airplane_model = gameintro.airplane_model_choice()
+
+while game_going:
+
+    if quiz.quiz_asker():
+        score += 1     # lisää pisteen oikein vastatusta kysymyksestä
+        travel_info = gamesql.travel_co2(current_airport, airplane_model) # lentoon liittyvät tiedot
+        distance += travel_info[0]
+        co2_used += travel_info[1]
+        used_time += travel_info[2]
+        current_airport = travel_info[3]
+
+    else:
+        game_going = False # lopettaa pelin puuttuu pelin loppuun kuuluvat funktiot
