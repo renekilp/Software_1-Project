@@ -20,7 +20,7 @@ gameintro.starting_screen()
 search = gamesql.search_large_airports()
 airplane_model = gameintro.airplane_model_choice()
 current_airport = gamesql.random_fly()
-print(f" You are in {current_airport [0]}!")
+print(f"You are in {current_airport [0]}!")
 travel_result = gamesql.travel_co2(current_airport, airplane_model)
 distance = distance + travel_result[0]
 co2_used = co2_used + travel_result[1]
