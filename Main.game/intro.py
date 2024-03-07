@@ -81,4 +81,4 @@ def intro():
     Tässä kohtaa testataan, että jos alussa sanotaan "no" niin peli loppuu, muussa tapauksessa kutsutaan airplane_model_choice() funktiota.
     Jos intro() palauttaa True, kutsutaan airplane_model_choice() funktiota.
     """
-
+    pass
