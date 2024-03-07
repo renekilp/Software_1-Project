@@ -22,10 +22,10 @@ score = 0
 search = search_large_airports()
 airplane_model = airplane_model_choice()
 current_airport = random_fly()
-print(f" You are in {current_airport}!)
-travel_co2(, airplane_model)
+print(f" You are in {current_airport}!")
+travel_co2(current_airport, airplane_model)
 quiz_asker()
-if quiz_asker() == 1
+if quiz_asker() == 1:
     score += 1
 elif quiz_asker() == 0:
     break
