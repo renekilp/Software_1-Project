@@ -53,18 +53,21 @@ def airplane_model_choice():
             print(f"{Fore.GREEN}\nYou have chosen the {Fore.CYAN}Boeing 737")
             print(f"{Fore.GREEN}Great choice!")
             print(Style.RESET_ALL + Fore.RESET + Back.RESET)
+            return 1
             break
 
         elif airplane_model_input == "2":
             print(f"{Fore.GREEN}\nYou have chosen the {Fore.MAGENTA}Airbus A320")
             print(f"{Fore.GREEN}Great choice!")
             print(Style.RESET_ALL + Fore.RESET + Back.RESET)
+            return 2
             break
 
         elif airplane_model_input == "3":
             print(f"{Fore.GREEN}\nYou have chosen the {Fore.RED}Saab JA 37 Viggen")
             print(f"{Fore.GREEN}Great choice!")
             print(Style.RESET_ALL + Fore.RESET + Back.RESET)
+            return 3
             break
 
         else:
