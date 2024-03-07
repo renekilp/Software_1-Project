@@ -18,6 +18,9 @@ airplane_model = gameintro.airplane_model_choice()
 
 while game_going:
 
+    # pelaajan komennot functiot
+
+
     if quiz.quiz_asker():
         score += 1     # lisää pisteen oikein vastatusta kysymyksestä
         travel_info = gamesql.travel_co2(current_airport, airplane_model) # lentoon liittyvät tiedot
