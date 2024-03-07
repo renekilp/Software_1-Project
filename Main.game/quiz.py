@@ -67,7 +67,7 @@ random_answers = [
     "New York City", "Emily Dickinson", "1865", "Mg", "Galileo Galilei", "Mount Kilimanjaro",
     "Mexico City", "Lysosome", "GBP"]
 asked_question = []
-def quiz_asker (quiz_questions):
+def quiz_asker ():
     length = len(quiz_questions) #monta kysymystä on
     question_number = random.randint(0,length - 1) #"valitsee" randomin kysymyksen
     while question_number in asked_question:#tarkistaa, että kysymystä ei ole kysytty aikaisemmin
@@ -78,7 +78,7 @@ def quiz_asker (quiz_questions):
     r_answers.append(q_answer)
     random.shuffle(r_answers) #muuttaa random vastauksien järjestyksen
     print(f"{question}")
-    for i in range(4): #randomaa vastauksen random vastausten kanssa sekaisin
+    for i in range(5): #randomaa vastauksen random vastausten kanssa sekaisin
         print(f"{i + 1}. {r_answers[i]}")
     user_answer = input("What is the correct answer? (1, 2, 3, 4, 5): \n")
     asked_question.append(question_number) #"merkkaa" kysytyn kysymyksen kysytyksi
