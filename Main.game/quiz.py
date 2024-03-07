@@ -1,4 +1,7 @@
 import random
+from colorama import Fore,init
+
+init(autoreset=True)
 
 quiz_questions = [
     "What is the capital of France?", "Who wrote 'Romeo and Juliet'?",
@@ -77,14 +80,14 @@ def quiz_asker ():
     r_answers = random.sample(random_answers, 4) #hakee random vastauksista 4
     r_answers.append(q_answer)
     random.shuffle(r_answers) #muuttaa random vastauksien järjestyksen
-    print(f"{question}")
+    print(f"{Fore.GREEN}{question}{Fore.RESET}")
     for i in range(5): #randomaa vastauksen random vastausten kanssa sekaisin
-        print(f"{i + 1}. {r_answers[i]}")
-    user_answer = input("What is the correct answer? (1, 2, 3, 4, 5): \n")
+        print(f"{Fore.YELLOW}{i + 1}. {r_answers[i]}")
+    user_answer = input(f"{Fore.GREEN}What is the correct answer? (1, 2, 3, 4, 5): \n")
     asked_question.append(question_number) #"merkkaa" kysytyn kysymyksen kysytyksi
     if user_answer == str(r_answers.index(q_answer) + 1): #jos vastaus oikein, muuten väärin
-        print("CORRECT")
+        print(f"{Fore.CYAN}CORRECT")
         return True
     else:
-        print("INCORRECT")
+        print(f"{Fore.RED}INCORRECT")
         return False
