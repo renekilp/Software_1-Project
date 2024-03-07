@@ -3,15 +3,16 @@ from geopy.distance import geodesic
 import math
 import mysql.connector
 from connection import connector
-from intro import intro
+from gameintro import intro
 import helpscreen
 import quiz
 import gamesql
+improt intro
 
 #import quiz <<- pitää kutsua tyyppisesti from quiz import quiz_asker tms. -onni
 
-from intro import intro #kutsutaan intro funktio tänne.
-from intro import airplane_model_choice
+from gameintro import intro #kutsutaan intro funktio tänne.
+from gameintro import airplane_model_choice
 
 # testataan main funktion toimintaa
 
