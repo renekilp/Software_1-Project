@@ -90,14 +90,14 @@ fake_answers = [
     "Pablo Picasso", "Claude Monet", "Edvard Munch", "Salvador Dalí",
     "Biology", "Neuroscience", "Anthropology", "Sociology",
     "Au", "Cu", "Hg", "Ag",
-    "PLACEHOLDER93", "PLACEHOLDER94", "PLACEHOLDER95", "PLACEHOLDER96",
-    "F. Scott Fitzgerald", "Ernest Hemingway", "Mark Twain", "Charles Dickens",
+    "Jane Austen", "Ernest Hemingway", "Mark Twain", "Charles Dickens",
     "Meiosis", "Fertilization", "Differentiation", "Apoptosis",
     "Dollar", "Pound", "Yen", "Euro",
     "Al Gore", "Bill Gates", "Steve Jobs", "Mark Zuckerberg",
     "Sahara", "Gobi Desert", "Kalahari Desert", "Great Victoria Desert",
     "Joe Biden", "Barack Obama", "Donald Trump", "George W. Bush",
     "Oxygen", "Carbon Dioxide", "Argon", "Methane",
+    "100°F", "150°F", "180°F", "200°F",
     "Pound Sterling", "Charles Dickens", "Emily Brontë", "Charlotte Brontë",
     "O2", "N2", "H2", "C",
     "Leif Erikson", "Amerigo Vespucci", "Vasco da Gama", "John Cabot",
@@ -109,7 +109,6 @@ fake_answers = [
     "Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Southern Ocean",
     "Thomas Edison", "Nikola Tesla", "Guglielmo Marconi", "Samuel Morse",
     "Olive oil", "Tahini", "Garlic", "Lemon juice"]
-
 
 def kysymystaulun_luonti():
     '''
