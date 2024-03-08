@@ -24,5 +24,3 @@ def quiz():
                 return False
 
         user_input = input(f"{Fore.GREEN}Answer was not in correct format try again\n")
-
-quiz()
