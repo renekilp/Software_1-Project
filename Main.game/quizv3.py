@@ -2,7 +2,7 @@ from gamesql import get_random_question
 from colorama import Fore,init
 init(autoreset=True)
 def quiz():
-    question = get_random_question()[0] # Hakee kysymyksen
+    question = get_random_question() # Hakee kysymyksen
     correct_answer = question[1] # ottaa ylös oikean vastauksen
     answer_set = {question[1],question[2],question[3],question[4],question[5]} # sekoittaa kysymykset muttamalle listan setiksi
 
