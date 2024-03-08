@@ -6,7 +6,7 @@ Projektin tarkoituksena oli kehittää yksinkertainen lentopeli, jossa käytetä
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 TOIMINTA OHJEET PELIN AJAMISEEN (ns. tyhjältä pöydältä)
-
+>
 1. Mariadb MSI-paketin lataaminen https://mariadb.org/download/
   - Aja asennusohjelma oletuksilla.
   - Käytä kohdissa 'Käyttäjä' ja 'Salasana' molemmissa tekstiä 'root'. Sekä aseta kohtaan 'Portti' luku: 3306.
