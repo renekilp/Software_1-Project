@@ -6,8 +6,8 @@ Projektin tarkoituksena oli kehittää yksinkertainen lentopeli, jossa käytetä
 
 Toiminta ohjeet pelin ajamiseen (ns. tyhjältä pöydältä)
 
-1. - Mariadb:n ja HeidiSql:n lataaminen. 
-2. - Luo uusi istunto HeidiSql:ssä. Käytä kohdissa 'Käyttäjä' ja 'Salasana' molemmissa tekstiä 'root'. Sekä aseta kohtaa 'Portti' luku: 3306.
-3. . Alustavasti tarvitaan flight_game tietokanta, jonka luontiskripti löytyy Metropolian Moodlesta.
-4. - Lataa IDE libraryt; colorama ja art - (esim. terminaalissa aja komennot: pip install colorama, pip install art)
-5. - Aja KYSYMYSTAULUNLUONTI.py tiedosto vain KERRAN, jotta saadaan tarvittava taulu valmiiseen flight_game tietokantaan.
+- Mariadb:n ja HeidiSql:n lataaminen. 
+- Luo uusi istunto HeidiSql:ssä. Käytä kohdissa 'Käyttäjä' ja 'Salasana' molemmissa tekstiä 'root'. Sekä aseta kohtaa 'Portti' luku: 3306.
+- Alustavasti tarvitaan flight_game tietokanta, jonka luontiskripti löytyy Metropolian Moodlesta.
+- Lataa IDE libraryt; colorama ja art - (esim. terminaalissa aja komennot: pip install colorama, pip install art)
+- Aja KYSYMYSTAULUNLUONTI.py tiedosto vain KERRAN, jotta saadaan tarvittava taulu valmiiseen flight_game tietokantaan.
