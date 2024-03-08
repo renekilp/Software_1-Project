@@ -6,12 +6,13 @@ Projektin tarkoituksena oli kehittää yksinkertainen lentopeli, jossa käytetä
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 TOIMINTA OHJEET PELIN AJAMISEEN (ns. tyhjältä pöydältä)
->
+
 1. Mariadb MSI-paketin lataaminen https://mariadb.org/download/
   - Aja asennusohjelma oletuksilla.
   - Käytä kohdissa 'Käyttäjä' ja 'Salasana' molemmissa tekstiä 'root'. Sekä aseta kohtaan 'Portti' luku: 3306.
 
-* Alustavasti tarvitaan flight_game tietokanta, jonka luontiskripti löytyy Metropolian Moodlesta. Luontiskripti on lisätty myös tämän repositoryn kansioon "Database", jossa (flight_game_luontiskripti.sql)
+* Alustavasti tarvitaan flight_game tietokanta, jonka luontiskripti löytyy Metropolian Moodlesta. Luontiskripti on lisätty myös tämän repositoryn kansioon "Database", jossa (flight_game_luontiskripti.sql). Tarvitset sitä kohdassa (2.)
+
 2. Lentopelin tietokannan luominen MariaDB:ssä
   - Step1: Luo tietokanta (create database flight_game)
   - Step2: Siirry MariaDB:ssä äsken luomaasi tietokantaan (use flight_game)
