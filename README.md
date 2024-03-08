@@ -15,11 +15,12 @@ TOIMINTA OHJEET PELIN AJAMISEEN (ns. tyhjältä pöydältä)
 2. Lentopelin tietokannan luominen MariaDB:ssä
   - Step1: Luo tietokanta (create database flight_game)
   - Step2: Siirry MariaDB:ssä äsken luomaasi tietokantaan (use flight_game)
-  - Step3: Alla olevaa skirptiä ei kannata ajaa copy-pastaamalla se MySQL Command Line Clienttiin vaan ajamalla se MySQL Command Line Clientissä seuraavalla komennolla:
-          - source full\path\tosql\file.sql   <- muokkaa oman reitin mukaan riippuen, minne olet luontiskriptin ladannut.
+  - Step3: Aja (flight_game_luontiskripti.sql) MySQL Command Line Clientissä seuraavalla komennolla:
+          - source full\path\tosql\flight_game_luontiskripti.sql   <- muokkaa reitti, siten minne sen olet ladannut. (esim C:\Users\nimi\Downloads\flight_game_luontiskripti.sql)
 
-- Lataa libraryt; colorama ja art - (esim. terminaalissa aja komennot: pip install colorama, pip install art / tai "käsin" lataa IDE:n osioista expansions/extensions)
-- Aja KYSYMYSTAULUNLUONTI.py tiedosto vain KERRAN, jotta saadaan tarvittava (questions) taulu valmiiseen flight_game tietokantaan.
+4. Lataa libraryt; colorama ja art - (esim. IDE:n terminaalissa aja komennot: pip install colorama, pip install art / tai "käsin" lataa IDE:n osioista expansions/extensions)
+
+5. Aja KYSYMYSTAULUNLUONTI.py tiedosto vain KERRAN, jotta saadaan tarvittava (questions) taulu valmiiseen flight_game tietokantaan.
 
 - 
 -------------------------------------------------------------------------------------------------------------------------------------------------
