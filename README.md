@@ -18,10 +18,10 @@ TOIMINTA OHJEET PELIN AJAMISEEN (ns. tyhjältä pöydältä)
   - Step3: Aja (flight_game_luontiskripti.sql) MySQL Command Line Clientissä seuraavalla komennolla:
           - source full\path\tosql\flight_game_luontiskripti.sql   <- muokkaa reitti, siten minne sen olet ladannut. (esim C:\Users\nimi\Downloads\flight_game_luontiskripti.sql)
 
-4. Lataa libraryt; colorama ja art - (esim. IDE:n terminaalissa aja komennot: pip install colorama, pip install art / tai "käsin" lataa IDE:n osioista expansions/extensions)
+4. Lataa libraryt; colorama ja art - (esim. IDE:n terminaalissa aja komennot: pip install colorama, pip install art , tai "käsin" lataa IDE:n osioista expansions/extensions)
 
 5. Aja KYSYMYSTAULUNLUONTI.py tiedosto vain KERRAN, jotta saadaan tarvittava (questions) taulu valmiiseen flight_game tietokantaan.
 
-- 
+6. 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
