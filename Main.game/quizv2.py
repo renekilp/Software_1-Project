@@ -83,12 +83,14 @@ def question_query_from_database():
         print("Game over! Thank you for playing!\n")
         return False # Palautetaan False, jos vastaus on väärin.
 
+testi_piste_lista = []
 
 def quiz_query_function():
 
     # Jos edellinen funktio palauttaa arvon True, niin kysytään haluaako pelaaja jatkaa.
     if question_query_from_database() == True: #
-        
+        piste = 1
+        testi_piste_lista.append(piste)
         while True: 
             user_input = input("Do you want to continue? (y/n):\n").lower()
             
@@ -104,3 +106,5 @@ def quiz_query_function():
          
 
 quiz_query_function() # Kutsutaan funktiota
+
+print(f"Your score is: {sum(testi_piste_lista)}") # Tulostetaan pisteet, jotka on kerätty listassa.
