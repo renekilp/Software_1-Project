@@ -81,6 +81,6 @@ def credits_screen():
     game_credits_query()
 
 
-help_screen()
+
 
 #   exit, tutorial, player information, credits
