@@ -27,7 +27,7 @@ def help_screen():
 def tutorial_screen():
     tutorial_ascii()
     tut_text = """
-    Heya! I'm your friendly co-pilot AI O.N.N.I (Omnipotent, Neat, Navigation, Instructor)!
+    Heya! I'm your friendly co-pilot A.I O.N.N.I (Omnipotent, Neat, Navigation, Instructor)!
     I'm here to give you some nifty information about the game.
     
     First you have to choose a plane. The only difference between the planes is the co2 usage (and your own preference).
@@ -45,8 +45,10 @@ def tutorial_screen():
 
 def player_info():
     playerinfo_ascii()
-    print(f"""
+    plinfo_text = (f"""
     Welcome BOSS! I've been tracking some of your progress...
+    
+    The plane you selected is: {airplane_model}
     
     Your current score is: {score}
     Your current flown distance is: {distance}
@@ -54,9 +56,18 @@ def player_info():
     Your current co2 usage is: {used_co2}
     
     Wowee! You are flying like a real captain! Let's push that score up.
+    
     """)
-    
-    
+    slowly_generate_print(plinfo_text, delay=0.015)
+
+
+def quit_game():
+    print("You chose to end the game. Farewell!")
+    game_going = False
+    return game_going
+
+
+
 
 
 
