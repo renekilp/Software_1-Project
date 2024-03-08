@@ -15,4 +15,4 @@ def game_credits_query():
         else:
             print("\nInvalid input, please try again:\n")
 
-game_credits_query()
+

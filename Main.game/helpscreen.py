@@ -1,13 +1,21 @@
 from colorama import *
 from asciiartfunc import *
-
-
+from gamecredits import game_credits_query
 
 
 def help_screen():
     commands = ['tutorial', 'player info', 'quit', 'credits']
     while True:
-        print(f"{Fore.GREEN}Welcome to the help screen!\nHere's a list of all available commands:\n1. Add a command\n2. Add a command\n3. Add a command\n4. Add a command")
+        print(f"""
+        {Fore.GREEN}Welcome to the help screen!
+        Here's a list of all available commands:
+        
+        1. Tutorial
+        2. Player info
+        3. Quit
+        4. Credits
+        
+        """)
         selected_command = input(f"\n{Fore.YELLOW}Please select a command:\n").lower()
         if selected_command not in commands:
             print("Invalid command! Please choose one of the available commands from the list.")
@@ -24,6 +32,7 @@ def help_screen():
             credits_screen()
             break
 
+
 def tutorial_screen():
     tutorial_ascii()
     tut_text = """
@@ -38,7 +47,8 @@ def tutorial_screen():
     After the game ends, your will be scored based on the points, distance and co2 usage.
     How far can you reach without making a mistake? Let's find out! YOU GOT THIS BOSS!
     
-    Remember that you can always use the 'help' command if you find yourself stuck. I'm here to help!
+    Remember that you can always use the 'help' command to see all the available commands!
+    (even play this short tutorial again if you so desire.)
     """
     slowly_generate_print(tut_text, delay=0.015)
 
@@ -67,18 +77,10 @@ def quit_game():
     return game_going
 
 
+def credits_screen():
+    game_credits_query()
 
 
-
-
-
-
-
-
-
-
-
-
-tutorial_screen()
+help_screen()
 
 #   exit, tutorial, player information, credits
