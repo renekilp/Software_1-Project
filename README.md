@@ -26,7 +26,7 @@ Alustavasti tarvitaan flight_game tietokanta, jonka luontiskripti löytyy Metrop
 
 5. Aja KYSYMYSTAULUNLUONTI.py tiedosto vain KERRAN, jotta saadaan tarvittava (questions) taulu valmiiseen flight_game tietokantaan.
 
-6. 
+6. KESKEN
 
 
 ---
