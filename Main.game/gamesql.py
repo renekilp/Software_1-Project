@@ -32,7 +32,7 @@ def get_random_question():
     random_id = random.randint(1, question_count[0][0])
     sql = f"SELECT question,correct_answer,wrong_answer_1,wrong_answer_2,wrong_answer_3,wrong_answer_4 FROM questions where id = {random_id}"
     query = query_database(sql)
-    return query
+    return query[0]
 
 def new_score(player_name,score): #tallentaa uuden pistemäärän tietokantaan
     sql = f"INSERT INTO values {player_name},{score}"  #puuttuu taulu
