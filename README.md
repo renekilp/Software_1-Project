@@ -17,7 +17,7 @@ Alustavasti tarvitaan flight_game tietokanta, jonka luontiskripti löytyy Metrop
   - Step1: Luo tietokanta (create database flight_game)
   - Step2: Siirry MariaDB:ssä äsken luomaasi tietokantaan (use flight_game)
   - Step3: Aja (flight_game_luontiskripti.sql) MySQL Command Line Clientissä seuraavalla komennolla:
-          - source full\path\tosql\flight_game_luontiskripti.sql   <- muokkaa reitti, siten minne sen olet ladannut. (esim C:\Users\nimi\Downloads\flight_game_luontiskripti.sql)
+    - source full\path\tosql\flight_game_luontiskripti.sql   <- muokkaa reitti, siten minne sen olet ladannut. (esim C:\Users\nimi\Downloads\flight_game_luontiskripti.sql)
 
 4. Lataa libraryt; colorama ja art - (esim. IDE:n terminaalissa aja komennot: pip install colorama, pip install art , tai "käsin" lataa IDE:n osioista expansions/extensions)
 
