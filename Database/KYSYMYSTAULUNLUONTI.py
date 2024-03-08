@@ -95,7 +95,7 @@ fake_answers = [
     "Dollar", "Pound", "Yen", "Euro",
     "Al Gore", "Bill Gates", "Steve Jobs", "Mark Zuckerberg",
     "Sahara", "Gobi Desert", "Kalahari Desert", "Great Victoria Desert",
-    "Joe Biden", "Barack Obama", "Donald Trump", "George W. Bush",
+    "Abraham Lincoln", "Barack Obama", "Donald Trump", "George W. Bush",
     "Oxygen", "Carbon Dioxide", "Argon", "Methane",
     "100°F", "150°F", "180°F", "200°F",
     "Pound Sterling", "Charles Dickens", "Emily Brontë", "Charlotte Brontë",
