@@ -22,7 +22,7 @@ def query_database(sql,fetchall=True): #Tein täst funktion, niin ei tarvi aina 
 # query_database("SELECT * FROM airport") TestiTesti
 
 def search_large_airports(): # hakee isojen lentokenttien nimet ja sijainnin
-    sql = "SELECT name,latitude_deg,longitude_deg FROM airport where type = 'large_airport'"
+    sql = f"SELECT name, ROUND(latitude_deg, 4), ROUND(longitude_deg, 4) FROM airport WHERE type = 'large_airport'"
     airports = query_database(sql) # airports = suoritetaan query_database funktio, joka hakee tietokannasta tiedot annetulla sql muuttujalla
 
     return airports
