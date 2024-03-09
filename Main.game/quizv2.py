@@ -1,5 +1,6 @@
 import random
 import mysql.connector
+from colorama import Fore,init
 
 connection = mysql.connector.connect(
     host="localhost",
@@ -57,30 +58,30 @@ def question_query_from_database():
     random.shuffle(all_answers_list)
     
     # Tulostetaan kysymys ja sekoitetut vastaukset käyttäjälle, tarvitaan kuitenkin lisätä indexit niin saadaan kaikki siitä sekoitetusta listasta.
-    print(f"\n{chosen_question_from_database[0]} Choose the right answer (1-5):") # Tässä tulostetaan, se kysymys mikä on arvottu funktion alussa.
+    print(f"{Fore.GREEN}\n{chosen_question_from_database[0]} Choose the right answer (1-5):") # Tässä tulostetaan, se kysymys mikä on arvottu funktion alussa.
     print(f"1. {all_answers_list[0]}") # 0-indeksin vastaus
     print(f"2. {all_answers_list[1]}") # 1-  ---||---
     print(f"3. {all_answers_list[2]}") # 2-  ---||---
     print(f"4. {all_answers_list[3]}") # 3-  ---||---
-    print(f"5. {all_answers_list[4]}") # 4-  ---||---
+    print(f"5. {all_answers_list[4]}{Fore.RESET}") # 4-  ---||---
     
     # Käyttäjän syöte.
     user_input = input("\nYour answer (1-5):\n")
 
     # Tarkistetaan että käyttäjän syöte koostuu ainoastaan numeroista 1-5. Jos ei, kysytään uudestaan.
     while user_input not in ["1", "2", "3", "4", "5"] or user_input == "": # eli "Kun syöte ei ole mikään 'näistä' tai 'näistä'"
-        print("\nInvalid input.")
-        user_input = input("Choose the right answer (1-5):\n")
+        print(f"\n{Fore.YELLOW}Invalid input.{Fore.RESET}")
+        user_input = input(f"Choose the right answer (1-5):\n{Fore.RESET}")
     
     # Koska listan indeksit alkavat nollasta, ja syöte on 1-5 niin täytyy vähentää yhdellä. Ja tarkistetaan onko vastaus oikein.
     if all_answers_list[int(user_input)-1] == correct_answer:
-        print("\nCORRECT!\n")
+        print(f"\nCORRECT!\n{Fore.RESET}")
         return True # Palautetaan True, jos vastaus on oikein.
     
     # Muussa tapauksessa tulostetaan oikea vastaus ja peli loppuu.
     else:
-        print(f"\nWRONG! The correct answer was: {correct_answer}.")
-        print("Game over! Thank you for playing!\n")
+        print(f"{Fore.RED}\nWRONG! {Fore.YELLOW}The correct answer was: {correct_answer}.{Fore.RESET}")
+        print(f"{Fore.GREEN}Game over! Thank you for playing!\n{Fore.RESET}")
         return False # Palautetaan False, jos vastaus on väärin.
 
 # testi_piste_lista = []
