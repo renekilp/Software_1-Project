@@ -1,5 +1,5 @@
 import gameintro
-import quiz
+import quizv2
 import gamesql
 
 #import quiz <<- pitää kutsua tyyppisesti from quiz import quiz_asker tms. -onni
@@ -20,14 +20,25 @@ while game_going:
 
     # pelaajan komento functiot
 
-
-    if quiz.quiz_asker():
+    gamesql.random_fly()
+    print(f"Your current location is: {current_airport}")
+    gamesql.travel_co2(current_airport, airplane_model)
+    print(f"CO2 used: {co2_used}g, Distance traveled: {distance}km, Time used: {used_time}h")
+    
+    while quizv2.question_query_from_database():
         score += 1     # lisää pisteen oikein vastatusta kysymyksestä
         travel_info = gamesql.travel_co2(current_airport, airplane_model) # lentoon liittyvät tiedot
         distance += travel_info[0]
         co2_used += travel_info[1]
         used_time += travel_info[2]
         current_airport = travel_info[3]
+        
+        continue_game = input("Do you want to continue? (y/n): ").lower()
+        if continue_game == "y":
+            game_going = True
+        else:
+            game_going = False
 
     else:
+        print(f"Your final score is: {score}")
         game_going = False # lopettaa pelin puuttuu pelin loppuun kuuluvat funktiot

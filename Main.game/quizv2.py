@@ -85,7 +85,7 @@ def question_query_from_database():
 
 # testi_piste_lista = []
 
-def quiz_query_function():
+# def quiz_query_function():
 
     # Jos edellinen funktio palauttaa arvon True, niin kysytään haluaako pelaaja jatkaa.
     if question_query_from_database() == True: #
