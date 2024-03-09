@@ -66,16 +66,16 @@ def question_query_from_database():
     print(f"5. {all_answers_list[4]}{Fore.RESET}") # 4-  ---||---
     
     # Käyttäjän syöte.
-    user_input = input("\nYour answer (1-5):\n")
+    user_input = input(f"\n{Fore.GREEN}Your answer (1-5):\n{Fore.RESET}")
 
     # Tarkistetaan että käyttäjän syöte koostuu ainoastaan numeroista 1-5. Jos ei, kysytään uudestaan.
     while user_input not in ["1", "2", "3", "4", "5"] or user_input == "": # eli "Kun syöte ei ole mikään 'näistä' tai 'näistä'"
         print(f"\n{Fore.YELLOW}Invalid input.{Fore.RESET}")
-        user_input = input(f"Choose the right answer (1-5):\n{Fore.RESET}")
+        user_input = input(f"{Fore.GREEN}Choose the right answer (1-5):\n{Fore.RESET}")
     
     # Koska listan indeksit alkavat nollasta, ja syöte on 1-5 niin täytyy vähentää yhdellä. Ja tarkistetaan onko vastaus oikein.
     if all_answers_list[int(user_input)-1] == correct_answer:
-        print(f"\nCORRECT!\n{Fore.RESET}")
+        print(f"{Fore.GREEN}\nCORRECT!\n{Fore.RESET}")
         return True # Palautetaan True, jos vastaus on oikein.
     
     # Muussa tapauksessa tulostetaan oikea vastaus ja peli loppuu.
