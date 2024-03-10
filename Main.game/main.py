@@ -38,8 +38,10 @@ if gameintro.starting_screen(): # aloitetaanko peli vai ei
             continue_game = input(f"{Fore.GREEN}Do you want to continue? (y/n):\n{Fore.RESET}").lower()
             if continue_game == "y":
                 game_going = True
-            else:
+            elif continue_game == "n":
                 game_going = False
+            else:
+                print(f"{Fore.YELLOW}Invalid input entered")
 
         else:
             print(f"{Fore.GREEN}Your final score is: {score}{Fore.RESET}")
