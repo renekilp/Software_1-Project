@@ -26,14 +26,14 @@ Alustavasti tarvitaan flight_game tietokanta, jonka luontiskripti löytyy Metrop
 
 5. Aja KYSYMYSTAULUNLUONTI.py tiedosto vain KERRAN, jotta saadaan tarvittava (questions) taulu valmiiseen flight_game tietokantaan.
 
-6. KESKEN
+6. Aja high_score_into_database.py tiedosto, jotta saadaan tarvittava (high_score) taulu valmiiseen flight_game tietokantaan.
 
 
 ---
 ### (Kuva) tietokannan relaatiomallista 
-![alt text](flight_game_relation_w_questions.png)
+![alt text](flight_game_relation_model.png)
 
-questions- taulu lisätty alkuperäiseen tietokantaan (ks. toimintaohjeet).
+questions-, ja high_score taulut lisätty alkuperäiseen tietokantaan (ks. toimintaohjeet).
 
 ## Tietokannan sql-koodi
 ```sql
