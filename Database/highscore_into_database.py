@@ -15,10 +15,13 @@ def high_score_taulun_luonti():
     kursori.execute('''
             CREATE TABLE IF NOT EXISTS high_score 
             (id INTEGER PRIMARY KEY AUTO_INCREMENT,
-            name TEXT,
-            points TEXT)''')
+            player_name TEXT,
+            player_score TEXT)''')
     
     yhteys.commit()
     kursori.close()
     print("1. Taulu (high_score) luotu tietokantaan.")
+
+high_score_taulun_luonti()
+
 
