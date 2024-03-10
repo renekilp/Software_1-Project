@@ -9,6 +9,7 @@ Projektin tarkoituksena oli kehittää yksinkertainen lentopeli, jossa käytetä
 - Onni Kivinen
 - Patrik Skogberg
 ## Toiminta ohjeet pelin ajamiseen
+**Mene kohtaan 3, jos sinulla on jo MariaDB MSI-paketti ja "puhdas" flight_game tietokanta**.
 
 1. Mariadb MSI-paketin lataaminen https://mariadb.org/download/
   - Aja asennusohjelma oletuksilla.
@@ -22,11 +23,11 @@ Alustavasti tarvitaan flight_game tietokanta, jonka luontiskripti löytyy Metrop
   - Step3: Aja (flight_game_luontiskripti.sql) MySQL Command Line Clientissä seuraavalla komennolla:
     - source full\path\tosql\flight_game_luontiskripti.sql   <- muokkaa reitti, siten minne sen olet ladannut.
 
-4. Lataa libraryt; colorama ja art - (esim. IDE:n terminaalissa aja komennot: pip install colorama, pip install art , tai "käsin" lataa IDE:n osioista expansions/extensions)
+3. Lataa libraryt; colorama ja art - (esim. IDE:n terminaalissa aja komennot: pip install colorama, pip install art , tai "käsin" lataa IDE:n osioista expansions/extensions)
 
-5. Aja KYSYMYSTAULUNLUONTI.py tiedosto vain KERRAN, jotta saadaan tarvittava (questions) taulu valmiiseen flight_game tietokantaan.
+4. Aja KYSYMYSTAULUNLUONTI.py tiedosto vain KERRAN, jotta saadaan tarvittava (questions) taulu valmiiseen flight_game tietokantaan.
 
-6. Aja high_score_into_database.py tiedosto, jotta saadaan tarvittava (high_score) taulu valmiiseen flight_game tietokantaan.
+5. Aja high_score_into_database.py tiedosto, jotta saadaan tarvittava (high_score) taulu valmiiseen flight_game tietokantaan.
 
 
 ---
