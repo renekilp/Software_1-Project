@@ -133,6 +133,16 @@ CREATE TABLE IF NOT EXISTS `goal_reached` (
 
 -- Tietojen vientiä ei oltu valittu.
 
+-- Dumping structure for taulu flight_game.high_score
+CREATE TABLE IF NOT EXISTS `high_score` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `player_name` varchar(255) DEFAULT NULL,
+  `player_score` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Tietojen vientiä ei oltu valittu.
+
 -- Dumping structure for taulu flight_game.questions
 CREATE TABLE IF NOT EXISTS `questions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -152,5 +162,6 @@ CREATE TABLE IF NOT EXISTS `questions` (
 /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
+
 ```
 README.md kirjoittanut Onni Kivinen
