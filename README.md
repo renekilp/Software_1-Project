@@ -9,7 +9,7 @@ Projektin tarkoituksena oli kehittää yksinkertainen lentopeli, jossa käytetä
 - Onni Kivinen
 - Patrik Skogberg
 ## Toiminta ohjeet pelin ajamiseen
-**Mene kohtaan 3, jos sinulla on jo MariaDB MSI-paketti ja "puhdas" flight_game tietokanta**.
+
 
 1. Mariadb MSI-paketin lataaminen https://mariadb.org/download/
   - Aja asennusohjelma oletuksilla.
