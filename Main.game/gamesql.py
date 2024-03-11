@@ -73,12 +73,12 @@ def travel_co2(user_airport, airplane_model_input): #laskee lentoajan, co2 pää
     results = [distance, co2, flight_time, next_airport]
     return results
 
-def top_players():
+def top_players(): #hakee top 5 pelaajaa score taulusta
     sql = f"SELECT player_name,player_score FROM high_score ORDER BY player_score DESC LIMIT 5;";
     cursor = connection.cursor()
     query = query_database(sql)
     num = 1
-    for i in query:
+    for i in query: # printtaa ne järkevässä järjestyksessä järjestysnumeroiden kanssa
         print(f"{num}.{i}")
         num += 1
 
