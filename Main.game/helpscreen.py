@@ -28,7 +28,7 @@ def help_screen():
     elif help_command == 'credits':
         credits_screen()
     elif help_command == 'quiz':
-        question_query_from_database()
+        return question_query_from_database()
 
 
 def tutorial_screen():
