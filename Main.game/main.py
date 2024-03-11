@@ -26,7 +26,7 @@ if gameintro.starting_screen(): # aloitetaanko peli vai ei
         print(f"{Fore.GREEN}Your current location is: {current_airport[0]}{Fore.RESET}")
         gamesql.travel_co2(current_airport, airplane_model)
         print(f"{Fore.GREEN}CO2 used: {co2_used}g, Distance traveled: {distance}km, Time used: {used_time}h{Fore.RESET}")
-
+    if gameintro.starting_screen():
         if quizv2.question_query_from_database():
             score += 1     # lisää pisteen oikein vastatusta kysymyksestä
             travel_info = gamesql.travel_co2(current_airport, airplane_model) # lentoon liittyvät tiedot
@@ -48,3 +48,5 @@ if gameintro.starting_screen(): # aloitetaanko peli vai ei
             print(f"Your final co2 and how long your flighttime is: \n {co2_used:.2f}gramms and {used_time % 24:.2f}days")
             gamecredits.print_game_credits()
             game_going = False # lopettaa pelin puuttuu pelin loppuun kuuluvat funktiot
+
+#
