@@ -15,8 +15,10 @@ def help_screen(help_command):
         4. credits
         
         """)
+    print(Style.RESET_ALL)
     if help_command not in commands:
-        print("Invalid command! Please use one of the commands listed above.")
+        print(f"{Fore.RED}Invalid command! Please use one of the commands listed above.")
+        print(Style.RESET_ALL)
     elif help_command == 'tutorial':
         tutorial_screen()
     elif help_command == 'player info':
@@ -29,7 +31,7 @@ def help_screen(help_command):
 
 def tutorial_screen():
     tutorial_ascii()
-    tut_text = """
+    tut_text = f"""{Fore.GREEN}
     Heya! I'm your friendly co-pilot A.I O.N.N.I (Omnipotent, Neat, Navigation, Instructor)!
     I'm here to give you some nifty information about the game.
     
@@ -45,11 +47,12 @@ def tutorial_screen():
     (even play this short tutorial again if you so desire.)
     """
     slowly_generate_print(tut_text, delay=0.015)
+    print(Style.RESET_ALL)
 
 
 def player_info():
     playerinfo_ascii()
-    plinfo_text = (f"""
+    plinfo_text = (f"""{Fore.GREEN}
     Welcome BOSS! I've been tracking some of your progress...
     
     The plane you selected is: {airplane_model}
@@ -63,10 +66,10 @@ def player_info():
     
     """)
     slowly_generate_print(plinfo_text, delay=0.015)
-
+    print(Style.RESET_ALL)
 
 def quit_game():
-    print("You chose to end the game. Farewell!")
+    print(f"{Fore.YELLOW}You chose to end the game. Farewell!")
     game_going = False
     return game_going
 
