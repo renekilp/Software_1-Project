@@ -3,34 +3,28 @@ from asciiartfunc import *
 from gamecredits import game_credits_query
 
 
-def help_screen():
+def help_screen(help_command):
     commands = ['tutorial', 'player info', 'quit', 'credits']
-    while True:
-        print(f"""
+    print(f"""
         {Fore.GREEN}Welcome to the help screen!
         Here's a list of all available commands:
         
-        1. Tutorial
-        2. Player info
-        3. Quit
-        4. Credits
+        1. tutorial
+        2. player info
+        3. quit
+        4. credits
         
         """)
-        selected_command = input(f"\n{Fore.YELLOW}Please select a command:\n").lower()
-        if selected_command not in commands:
-            print("Invalid command! Please choose one of the available commands from the list.")
-        elif selected_command == 'tutorial':
-            tutorial_screen()
-            break
-        elif selected_command == 'player info':
-            player_info()
-            break
-        elif selected_command == 'quit':
-            quit_game()
-            break
-        elif selected_command == 'credits':
-            credits_screen()
-            break
+    if help_command not in commands:
+        print("Invalid command! Please use one of the commands listed above.")
+    elif help_command == 'tutorial':
+        tutorial_screen()
+    elif help_command == 'player info':
+        player_info()
+    elif help_command == 'quit':
+        quit_game()
+    elif help_command == 'credits':
+        credits_screen()
 
 
 def tutorial_screen():
