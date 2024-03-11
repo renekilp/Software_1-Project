@@ -7,12 +7,18 @@ def game_credits_query():
         game_credits_input = input("Would you like to see the credits? (yes/no)\n").lower()
         
         if game_credits_input == "yes" or game_credits_input == "y":
-            print("\n\nYIPPIIII \n")
+            print("\nSpaghetti coders: \nEemil Nurmi, Onni Kivinen, Rene Kilpeläinen ja Patrik Skogberg\nThanks For Playing!!!")
             return 1
         elif game_credits_input == "no" or game_credits_input == "n":
-            print("\nAw Shucks :(\n")
+            print("\nOh man :(")
             return False
+        elif game_credits_input == "secret" or "easteregg"
+            print("\nSecret airplane models: Peyman and Peltoniemi are open for use\n")
+            print("\nSpaghetti coders: \nEemil Nurmi, Onni Kivinen, Rene Kilpeläinen ja Patrik Skogberg\nThanks For Playing!!!")
+
         else:
             print("\nInvalid input, please try again:\n")
+
+game_credits_query()
 
 
