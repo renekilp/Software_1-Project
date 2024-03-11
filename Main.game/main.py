@@ -47,6 +47,7 @@ if gameintro.starting_screen(): # aloitetaanko peli vai ei
             print(f"{Fore.GREEN}Your final score is: {score}{Fore.RESET}")
             print(f"Your final co2 and how long your flighttime is: \n {co2_used:.2f}gramms and {used_time % 24:.2f}days")
             gamecredits.print_game_credits()
+            gamesql.top_players()
             game_going = False # lopettaa pelin puuttuu pelin loppuun kuuluvat funktiot
 
 #
