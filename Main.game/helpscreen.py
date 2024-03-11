@@ -1,24 +1,24 @@
 from colorama import *
 from asciiartfunc import *
 from gamecredits import game_credits_query
+from quizv2 import question_query_from_database
 
+def help_screen():
+    commands = ['quiz','tutorial', 'player info', 'quit', 'credits']
 
-def help_screen(help_command):
-    commands = ['tutorial', 'player info', 'quit', 'credits']
     print(f"""
         {Fore.GREEN}Welcome to the help screen!
         Here's a list of all available commands:
-        
-        1. tutorial
-        2. player info
-        3. quit
-        4. credits
+        1. quiz
+        2. tutorial
+        3. player info
+        4. quit
+        5. credits
         
         """)
-    print(Style.RESET_ALL)
+    help_command = input("Enter command").lower()
     if help_command not in commands:
-        print(f"{Fore.RED}Invalid command! Please use one of the commands listed above.")
-        print(Style.RESET_ALL)
+        print("Invalid command! Please use one of the commands listed above.")
     elif help_command == 'tutorial':
         tutorial_screen()
     elif help_command == 'player info':
@@ -27,6 +27,8 @@ def help_screen(help_command):
         quit_game()
     elif help_command == 'credits':
         credits_screen()
+    elif help_command == 'quiz':
+        question_query_from_database()
 
 
 def tutorial_screen():
