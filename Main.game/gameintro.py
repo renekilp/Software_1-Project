@@ -89,4 +89,3 @@ def intro():
     Jos intro() palauttaa True, kutsutaan airplane_model_choice() funktiota.
     """
     pass
-airplane_model_choice()
