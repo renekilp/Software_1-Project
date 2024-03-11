@@ -3,6 +3,7 @@ import quizv2
 import gamesql
 import gamecredits
 from helpscreen import help_screen
+from endgame import end_game
 
 from colorama import Fore,init
 #import quiz <<- pitää kutsua tyyppisesti from quiz import quiz_asker tms. -onni
@@ -35,14 +36,10 @@ if gameintro.starting_screen(): # aloitetaanko peli vai ei
             if continue_game == "y":
                 game_going = True
             elif continue_game == "n":
-                game_going = False
+                game_going = end_game(score,co2_used,used_time)
             else:
                 print(f"{Fore.YELLOW}Invalid input entered")
 
         else:
-            print(f"{Fore.GREEN}Your final score is: {score}{Fore.RESET}")
-            print(f"Your final co2 and how long your flighttime is: \n {co2_used:.2f}gramms and {used_time % 24:.2f}days")
-            gamecredits.game_credits_query()
-            gamesql.top_players()
-            game_going = False # lopettaa pelin puuttuu pelin loppuun kuuluvat funktiot
+            game_going = end_game(score,co2_used,used_time) # lopettaa pelin puuttuu pelin loppuun kuuluvat funktiot
 #
