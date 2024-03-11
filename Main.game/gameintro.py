@@ -66,6 +66,18 @@ def airplane_model_choice():
             print(f"{Fore.GREEN}Great choice!")
             print(Style.RESET_ALL + Fore.RESET + Back.RESET)
             return 3
+        
+        elif airplane_model_input == "Peltoniemi":
+            print(f"{Fore.GREEN}\nYou have chosen {Fore.YELLOW}Peltoniemi!!!")
+            print(f"{Fore.GREEN}Wow! You found Peltoniemi!")
+            print(Style.RESET_ALL + Fore.RESET + Back.RESET)
+            return 4
+        
+        elif airplane_model_input == "Peyman":
+            print(f"{Fore.GREEN}\nYou have chosen {Fore.YELLOW}Peyman!!!")
+            print(f"{Fore.GREEN}Wow! You found Peyman!")
+            print(Style.RESET_ALL + Fore)
+            return 5
 
         else:
             print(f"\n{Fore.YELLOW}Invalid input, please try again:{Fore.RESET}")
