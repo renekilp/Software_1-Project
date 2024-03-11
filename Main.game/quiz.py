@@ -91,3 +91,4 @@ def quiz_asker ():
     else:
         print(f"{Fore.RED}INCORRECT")
         return False
+quiz_asker()
