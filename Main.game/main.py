@@ -42,4 +42,3 @@ if gameintro.starting_screen(): # aloitetaanko peli vai ei
 
         else:
             game_going = end_game(score,co2_used,used_time) # lopettaa pelin puuttuu pelin loppuun kuuluvat funktiot
-#
