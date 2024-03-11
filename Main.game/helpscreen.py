@@ -3,8 +3,9 @@ from asciiartfunc import *
 from gamecredits import game_credits_query
 from quizv2 import question_query_from_database
 
+
 def help_screen():
-    commands = ['quiz','tutorial', 'player info', 'quit', 'credits']
+    commands = ['quiz','tutorial', 'player info', 'quit', 'credits', '1', '2', '3', '4', '5']
 
     print(f"""
         {Fore.GREEN}Welcome to the help screen!
@@ -16,19 +17,21 @@ def help_screen():
         5. credits
         
         """)
-    help_command = input("Enter command").lower()
+    help_command = input("Enter command\n").lower()
     if help_command not in commands:
         print("Invalid command! Please use one of the commands listed above.")
-    elif help_command == 'tutorial':
-        tutorial_screen()
-    elif help_command == 'player info':
-        player_info()
-    elif help_command == 'quit':
-        quit_game()
-    elif help_command == 'credits':
-        credits_screen()
-    elif help_command == 'quiz':
+    elif help_command == 'quiz' or help_command == "1":
         return question_query_from_database()
+
+    elif help_command == 'tutorial' or help_command == "2":
+        tutorial_screen()
+    elif help_command == 'player info' or help_command == "3":
+        player_info()
+    elif help_command == 'quit' or help_command == "4":
+        quit_game()
+    elif help_command == 'credits' or help_command == "5":
+        credits_screen()
+
 
 
 def tutorial_screen():
@@ -72,8 +75,8 @@ def player_info():
 
 def quit_game():
     print(f"{Fore.YELLOW}You chose to end the game. Farewell!")
-    game_going = False
-    return game_going
+
+    return False
 
 
 def credits_screen():
