@@ -89,21 +89,7 @@ def question_query_from_database():
 # def quiz_query_function():
 
     # Jos edellinen funktio palauttaa arvon True, niin kysytään haluaako pelaaja jatkaa.
-    if question_query_from_database() == True: #
-        # piste = 1
-        # testi_piste_lista.append(piste)
-        while True: 
-            user_input = input("Do you want to continue? (y/n):\n").lower()
-            
-            if user_input == "y": # Jos käyttäjä syöttää y, niin kutsutaan funktiota uudestaan.
-                return quiz_query_function()
-            
-            elif user_input == "n": # Jos käyttäjä syöttää n, niin tulostetaan kiitos ja lopetetaan.
-                print("Thank you for playing!\n")
-                return False
-        
-            else: # Jos syöte ei ole y tai n, kysytään uudestaan.
-                print("Invalid input.")
+
          
 
 # quiz_query_function() # Kutsutaan funktiota
