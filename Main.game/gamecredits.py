@@ -12,7 +12,7 @@ def game_credits_query():
         elif game_credits_input == "no" or game_credits_input == "n":
             print("\nOh man :(")
             return False
-        elif game_credits_input == "secret" or "easteregg"
+        elif game_credits_input == "secret" or "easteregg":
             print("\nSecret airplane models: Peyman and Peltoniemi are open for use\n")
             print("\nSpaghetti coders: \nEemil Nurmi, Onni Kivinen, Rene Kilpeläinen ja Patrik Skogberg\nThanks For Playing!!!")
 
