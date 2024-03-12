@@ -22,7 +22,6 @@ if gameintro.starting_screen(): # aloitetaanko peli vai ei
     airplane_model = gameintro.airplane_model_choice() # kysyy ja tallentaa lentokoneenyes
     while game_going:
         print(f"You are at {current_airport[0]}") #printtaa millä lentokentällä olet
-        print(f"Your score is: {score}")
 
         if help_screen():
             score += 1     # lisää pisteen oikein vastatusta kysymyksestä
