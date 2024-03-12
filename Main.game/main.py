@@ -2,6 +2,7 @@ import gameintro
 import quizv2
 import gamesql
 import gamecredits
+from colorama import *
 from loadingtitle import fakeloading, slowly_generate_title
 from helpscreen import help_screen
 from endgame import end_game
