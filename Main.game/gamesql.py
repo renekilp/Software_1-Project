@@ -48,31 +48,30 @@ def random_fly(): #lennättää pelaajan uudelle random lentokentälle
     user_airport = possible_airports[airport_number]
     return user_airport
 
-def travel_co2(user_airport, airplane_model_input): #laskee lentoajan, co2 päästöt ja matkan
+def travel_co2(user_airport, airplane_model):
     next_airport = random_fly()
     next_coordinates = [next_airport[1], next_airport[2]]
     current_coordinates = [user_airport[1], user_airport[2]]
     distance = geodesic(next_coordinates, current_coordinates).kilometers
     co2 = 0
     flight_time = 0
-    if airplane_model_input == "1": #airbus a320
-        co2 = distance * 62.5 #grammaa per kilometri
-        flight_time = distance / 830 #kmh
-    elif airplane_model_input == "2": #boeing 737
-        co2 = distance * 61
+    if airplane_model == 1:  # airbus a320
+        co2 = distance * 0.0625  # kg per kilometer
+        flight_time = distance / 830  # km/h
+    elif airplane_model == 2:  # boeing 737
+        co2 = distance * 0.061
         flight_time = distance / 845
-    elif airplane_model_input == "3": #saab ja37 viggen
-        co2 = distance * 435
+    elif airplane_model == 3:  # saab ja37 viggen
+        co2 = distance * 0.435
         flight_time = distance / 2231
-    elif airplane_model_input == "Peltoniemi" or "Peyman":
-        co2 = distance * 0.45
+    elif airplane_model == "Peltoniemi" or airplane_model == "Peyman":
+        co2 = distance * 0.0045
         flight_time = distance / 6
     else:
-        print("Invalid airplane, cant calculate emission and distance")
+        print("Invalid airplane, can't calculate emission and distance")
 
     results = [distance, co2, flight_time, next_airport]
     return results
-
 def top_players(): #hakee top 5 pelaajaa score taulusta
     sql = f"SELECT player_name,player_score FROM high_score ORDER BY player_score DESC LIMIT 5;";
     cursor = connection.cursor()
