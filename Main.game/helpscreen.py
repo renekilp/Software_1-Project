@@ -36,7 +36,7 @@ def help_screen():
 
 def tutorial_screen():
     tutorial_ascii()
-    tut_text = f"""{Fore.GREEN}
+    tut_text = """
     Heya! I'm your friendly co-pilot A.I O.N.N.I (Omnipotent, Neat, Navigation, Instructor)!
     I'm here to give you some nifty information about the game.
     
