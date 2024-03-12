@@ -15,8 +15,7 @@ def starting_screen():
     Jos vastaus on "yes", peli alkaa.
     Jos vastaus on "no", peli loppuu.
     Jos syötä mitä tahansa muuta, while-looppia jatketaan, kunnes käyttäjä antaa jommankumman syötteen.
-    """ 
-    welcome_text_to_ascii() 
+    """
     while True:
         intro_input = input(f"{Fore.GREEN}Do you wish to Start the game? {Fore.WHITE}({Fore.CYAN}yes{Fore.WHITE}/{Fore.RED}no{Fore.WHITE}) \n").lower()
         

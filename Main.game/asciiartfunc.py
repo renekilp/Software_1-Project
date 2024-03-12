@@ -19,12 +19,6 @@ def text_to_ascii(text, style='standard'):
         return "Invalid style specified"
 
 
-def welcome_text_to_ascii(): #   Welcome ascii
-    welcome_text = "Welcome!"
-    ascii_art = text_to_ascii(welcome_text, style='standard')
-    print(Fore.BLUE + ascii_art)
-    print(Style.RESET_ALL)
-
 def tutorial_ascii():
     tutorial_text = "TUTORIAL"  #   Tutorial ascii
     ascii_art = text_to_ascii(tutorial_text, style='banner')
