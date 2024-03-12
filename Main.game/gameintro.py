@@ -17,7 +17,7 @@ def starting_screen():
     Jos syötä mitä tahansa muuta, while-looppia jatketaan, kunnes käyttäjä antaa jommankumman syötteen.
     """
     while True:
-        intro_input = input(f"{Fore.GREEN}Do you wish to Start the game? {Fore.WHITE}({Fore.CYAN}yes{Fore.WHITE}/{Fore.RED}no{Fore.WHITE}) \n").lower()
+        intro_input = input(f"{Fore.GREEN}Do you wish to Start the game? {Fore.WHITE}({Fore.CYAN}y{Fore.WHITE}/{Fore.RED}n{Fore.WHITE}) \n").lower()
         
         if intro_input == "yes" or intro_input == "y":
             print(f"{Fore.GREEN}\n\nGreat! Let's get started!\n{Fore.RESET}{Style.RESET_ALL}")
@@ -40,29 +40,25 @@ def airplane_model_choice():
         airplane_model_input = input(f"{Fore.GREEN}Choose your airplane model or type in {Style.BRIGHT}'info'{Style.RESET_ALL}\n {Fore.CYAN}1{Fore.WHITE}. {Fore.CYAN}Boeing 737 \n {Fore.MAGENTA}2{Fore.WHITE}. {Fore.MAGENTA}Airbus A320 \n {Fore.RED}3{Fore.WHITE}. {Fore.RED}Saab JA 37 Viggen{Fore.RESET}{Style.RESET_ALL} \n")
         
         if airplane_model_input == "info":
-            
-            print(f"\n{Fore.GREEN}-------------------------------------------------------------------------------")
-            print(f"{Fore.MAGENTA}The Boeing 737 {Fore.GREEN}is a narrow-body aircraft produced by Boeing Commercial Airplanes at its Renton Factory in Washington.")
-            print(f"{Fore.CYAN}The Airbus A320 {Fore.GREEN}family are narrow-body airliners designed and produced by Airbus.")
+            print(f"\n{Fore.GREEN}---------------------------------------------------------------------------------------------------------------------")
+            print(f"{Fore.CYAN}The Boeing 737 {Fore.GREEN}is a narrow-body aircraft produced by Boeing Commercial Airplanes at its Renton Factory in Washington.")
+            print(f"{Fore.MAGENTA}The Airbus A320 {Fore.GREEN}family are narrow-body airliners designed and produced by Airbus.")
             print(f"{Fore.RED}The Saab 37 Viggen {Fore.GREEN}is a retired Swedish single-seat, single-engine, short-medium range combat aircraft.")
-            print("-------------------------------------------------------------------------------")
+            print(f"{Fore.GREEN}---------------------------------------------------------------------------------------------------------------------")
             print(Style.RESET_ALL + Fore.RESET + Back.RESET)   
         
         elif airplane_model_input == "1":
             print(f"{Fore.GREEN}\nYou have chosen the {Fore.CYAN}Boeing 737")
-            print(f"{Fore.GREEN}Great choice!")
             print(Style.RESET_ALL + Fore.RESET + Back.RESET)
             return 1
 
         elif airplane_model_input == "2":
             print(f"{Fore.GREEN}\nYou have chosen the {Fore.MAGENTA}Airbus A320")
-            print(f"{Fore.GREEN}Great choice!")
             print(Style.RESET_ALL + Fore.RESET + Back.RESET)
             return 2
 
         elif airplane_model_input == "3":
             print(f"{Fore.GREEN}\nYou have chosen the {Fore.RED}Saab JA 37 Viggen")
-            print(f"{Fore.GREEN}Great choice!")
             print(Style.RESET_ALL + Fore.RESET + Back.RESET)
             return 3
         
