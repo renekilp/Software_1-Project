@@ -31,14 +31,15 @@ if gameintro.starting_screen(): # aloitetaanko peli vai ei
             co2_used += travel_info[1]
             used_time += travel_info[2]
             current_airport = travel_info[3]
-
-            continue_game = input(f"{Fore.GREEN}Do you want to continue? {Fore.WHITE}({Fore.CYAN}y{Fore.WHITE}/{Fore.RED}n{Fore.WHITE}) \n").lower()
-            if continue_game == "y":
-                game_going = True
-            elif continue_game == "n":
-                game_going = end_game(score,co2_used,used_time)
-            else:
-                print(f"{Fore.YELLOW}Invalid input entered")
+            while True:
+                continue_game = input(f"{Fore.GREEN}Do you want to continue? {Fore.WHITE}({Fore.CYAN}y{Fore.WHITE}/{Fore.RED}n{Fore.WHITE}) \n").lower()
+                if continue_game == "y":
+                    game_going = True
+                    break
+                elif continue_game == "n":
+                    game_going = end_game(score,co2_used,used_time)
+                else:
+                    print(f"{Fore.YELLOW}Invalid input entered")
 else:
     #game_going = end_game(score,co2_used,used_time) # lopettaa pelin puuttuu pelin loppuun kuuluvat funktiot
     exit()
