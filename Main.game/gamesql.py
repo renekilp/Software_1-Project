@@ -35,10 +35,9 @@ def get_random_question():
     return query[0]
 
 def new_score(player_name,score): #tallentaa uuden pistemäärän tietokantaan
-    sql = f"INSERT INTO values {player_name},{score}"  #puuttuu taulu
+    sql = f"INSERT INTO high_score(player_name,player_score) values ('{player_name}',{score})"  #
     cursor = connection.cursor()
     cursor.execute(sql)
-    cursor.close()
     if cursor.rowcount == 1:
         print("New score added")
 
