@@ -63,7 +63,7 @@ def travel_co2(user_airport, airplane_model):
     elif airplane_model == 3:  # saab ja37 viggen
         co2 = distance * 0.435
         flight_time = distance / 2231
-    elif airplane_model == "Peltoniemi" or airplane_model == "Peyman":
+    elif airplane_model == "Matti" or airplane_model == "Peyman":
         co2 = distance * 0.0045
         flight_time = distance / 6
     else:

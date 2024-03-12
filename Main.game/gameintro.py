@@ -62,10 +62,10 @@ def airplane_model_choice():
             print(Style.RESET_ALL + Fore.RESET + Back.RESET)
             return 3
         
-        elif airplane_model_input == "Peltoniemi":
-            print(f"{Fore.GREEN}Wow! You found {Fore.YELLOW}Peltoniemi!")
+        elif airplane_model_input == "Matti":
+            print(f"{Fore.GREEN}Wow! You found {Fore.YELLOW}Matti!")
             print(Style.RESET_ALL + Fore.RESET + Back.RESET)
-            return "Peltoniemi"
+            return "Matti"
         
         elif airplane_model_input == "Peyman":
             print(f"{Fore.GREEN}Wow! You found {Fore.YELLOW}Peyman!")
