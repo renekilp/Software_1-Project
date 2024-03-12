@@ -11,4 +11,4 @@ def end_game(score,co2_used,used_time):
     gamesql.top_players()
     gamesql.new_score(player_name=input("Enter your name\n"),score = score)
     gamecredits.game_credits_query()
-    return False
+    exit()
