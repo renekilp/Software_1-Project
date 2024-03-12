@@ -2,12 +2,10 @@ import gameintro
 import quizv2
 import gamesql
 import gamecredits
-from colorama import *
-from loadingtitle import fakeloading, slowly_generate_title
+from loadingtitle import *
 from helpscreen import help_screen
 from endgame import end_game
-
-from colorama import Fore,init
+from colorama import Fore, Back, Style
 #import quiz <<- pitää kutsua tyyppisesti from quiz import quiz_asker tms. -onni
 
 # testataan main funktion toimintaa

@@ -8,13 +8,13 @@ def help_screen(airplane_model, co2_used,used_time,distance,score):
     commands = ['quiz','tutorial', 'player info', 'quit', 'credits', '1', '2', '3', '4', '5']
 
     print(f"""
-        {Fore.GREEN}Welcome to the help screen!
-        Here's a list of all available commands:
-        1. quiz
-        2. tutorial
-        3. player info
-        4. quit
-        5. credits
+{Fore.GREEN}Welcome to the help screen!
+Here's a list of all available commands:
+    1. quiz
+    2. tutorial
+    3. player info
+    4. quit
+    5. credits
         
         """)
     help_command = input("Enter command\n").lower()
