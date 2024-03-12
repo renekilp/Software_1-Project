@@ -57,11 +57,11 @@ def tutorial_screen():
 
 def player_info(airplane_model, co2_used,used_time,distance,score):
     playerinfo_ascii()
-    if airplane_model == 1:
+    if airplane_model == "1":
         airplane_model = "Boeing 737"
-    elif airplane_model == 2:
+    elif airplane_model == "2":
         airplane_model =  "Airbus a320"
-    elif airplane_model == 3:
+    elif airplane_model == "3":
         airplane_model = "Saab JA37 Viggen"
     elif airplane_model == "Peltoniemi" or airplane_model == "Peyman":
         airplane_model = "Peltoniemi" or "Peyman"
