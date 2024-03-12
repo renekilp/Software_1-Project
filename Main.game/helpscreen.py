@@ -27,7 +27,8 @@ def help_screen(airplane_model, co2_used,used_time,distance,score):
     elif help_command == 'player info' or help_command == "3":
         player_info(airplane_model, co2_used,used_time,distance,score)
     elif help_command == 'quit' or help_command == "4":
-        quit_game()
+        print("Thanks for playing!")
+        exit()
     elif help_command == 'credits' or help_command == "5":
         credits_screen()
 
