@@ -75,7 +75,7 @@ def player_info(airplane_model, co2_used,used_time,distance,score):
     
     Your current score is: {score}
     Your current flown distance is: {distance:.2f} kilometers
-    Your current fly time is: {used_time / 24:.2f} 
+    Your current fly time is: {used_time / 24:.2f} days
     Your current co2 usage is: {co2_used / 1000:.2f} kilogramms
     
     Wowee! You are flying like a real captain! Let's push that score up.
