@@ -2,6 +2,7 @@ import gameintro
 import quizv2
 import gamesql
 import gamecredits
+from loadingtitle import fakeloading, slowly_generate_title
 from helpscreen import help_screen
 from endgame import end_game
 
@@ -17,6 +18,8 @@ co2_used = 0
 current_airport = gamesql.random_fly()
 game_going = True
 
+fakeloading()
+slowly_generate_title()
 if gameintro.starting_screen(): # aloitetaanko peli vai ei
 
     airplane_model = gameintro.airplane_model_choice() # kysyy ja tallentaa lentokoneenyes

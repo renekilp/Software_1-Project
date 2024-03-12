@@ -64,5 +64,4 @@ def slowly_generate_title(delay=0.25):
         print(r"   /\^   ^  ^    ^  ⏚    -         ---  __       ^          ")
         print(Style.RESET_ALL)
 
-fakeloading()
-slowly_generate_title()
+
