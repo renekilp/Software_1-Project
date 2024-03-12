@@ -1,5 +1,4 @@
 import time
-import sys, subprocess
 from colorama import Fore, Style
 
 #       funktion tarkoitus luoda feikki latauspalkki
@@ -63,6 +62,7 @@ def slowly_generate_title(delay=0.25):
         print(r"              |_|_[X]_|____|          --   ⏚        -    ⏚        --  -  ")
         time.sleep(delay)
         print(r"   /\^   ^  ^    ^  ⏚    -         ---  __       ^          ")
+        print(Style.RESET_ALL)
 
 fakeloading()
 slowly_generate_title()
