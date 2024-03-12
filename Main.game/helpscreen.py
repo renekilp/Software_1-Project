@@ -4,7 +4,7 @@ from gamecredits import game_credits_query
 from quizv2 import question_query_from_database
 
 
-def help_screen():
+def help_screen(airplane_model, co2_used,used_time,distance,score):
     commands = ['quiz','tutorial', 'player info', 'quit', 'credits', '1', '2', '3', '4', '5']
 
     print(f"""
