@@ -4,7 +4,7 @@ from colorama import Fore,init
 def game_credits_query():
 
     while True:
-        game_credits_input = input("Would you like to see the credits? (yes/no)\n").lower()
+        game_credits_input = input("Would you like to see the credits? (y/n)\n").lower()
         
         if game_credits_input == "yes" or game_credits_input == "y":
             print("\nSpaghetti coders: \nEemil Nurmi, Onni Kivinen, Rene Kilpeläinen ja Patrik Skogberg\nThanks For Playing!!!")
