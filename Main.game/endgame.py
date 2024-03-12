@@ -12,5 +12,5 @@ def end_game(score,co2_used,used_time):
     if input("Would you like to save your score? (y/n) \n").lower() == "y":
         gamesql.new_score(player_name=input("Enter your name\n"),score = score)
     else:
-    gamecredits.game_credits_query()
-    exit()
+        gamecredits.game_credits_query()
+        exit()
