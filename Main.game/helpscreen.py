@@ -23,7 +23,7 @@ Here's a list of all available commands:
     elif help_command == 'quiz' or help_command == "1":
         return question_query_from_database(co2_used,used_time,distance,score)
     elif help_command == 'tutorial' or help_command == "2":
-        tutorial_screen()
+        tutorial_screen(airplane_model, co2_used,used_time,distance,score)
     elif help_command == 'player info' or help_command == "3":
         player_info(airplane_model, co2_used,used_time,distance,score)
     elif help_command == 'quit' or help_command == "4":
