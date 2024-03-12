@@ -56,7 +56,7 @@ def tutorial_screen():
     return help_screen()
 
 
-def player_info():
+def player_info(airplane_model, co2_used,used_time,distance,score):
     playerinfo_ascii()
     plinfo_text = (f"""{Fore.GREEN}
     Welcome BOSS! I've been tracking some of your progress...
@@ -66,7 +66,7 @@ def player_info():
     Your current score is: {score}
     Your current flown distance is: {distance}
     Your current fly time is: {used_time}
-    Your current co2 usage is: {used_co2}
+    Your current co2 usage is: {co2_used}
     
     Wowee! You are flying like a real captain! Let's push that score up.
     
