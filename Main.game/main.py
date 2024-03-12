@@ -23,7 +23,7 @@ if gameintro.starting_screen(): # aloitetaanko peli vai ei
 
     airplane_model = gameintro.airplane_model_choice() # kysyy ja tallentaa lentokoneenyes
     while game_going:
-        print(f"\nYou are at {current_airport[0]}") #printtaa millä lentokentällä olet
+        print(f"\nYour location is: {current_airport[0]}\n") #printtaa millä lentokentällä olet
         if help_screen(str(airplane_model), co2_used,used_time,distance,score):
             score += 1     # lisää pisteen oikein vastatusta kysymyksestä
             travel_info = gamesql.travel_co2(current_airport, airplane_model) # lentoon liittyvät tiedot
@@ -32,14 +32,14 @@ if gameintro.starting_screen(): # aloitetaanko peli vai ei
             used_time += travel_info[2]
             current_airport = travel_info[3]
             while True:
-                continue_game = input(f"{Fore.GREEN}Do you want to continue? {Fore.WHITE}({Fore.CYAN}y{Fore.WHITE}/{Fore.RED}n{Fore.WHITE}) \n").lower()
+                continue_game = input(f"{Fore.GREEN}Do you want to continue? {Fore.WHITE}({Fore.CYAN}y{Fore.WHITE}/{Fore.RED}n{Fore.WHITE}){Fore.RESET}\n").lower()
                 if continue_game == "y":
                     game_going = True
                     break
                 elif continue_game == "n":
                     game_going = end_game(score,co2_used,used_time)
                 else:
-                    print(f"{Fore.YELLOW}Invalid input entered")
+                    print(f"{Fore.YELLOW}Invalid input, please try again:{Fore.RESET}")
 else:
     #game_going = end_game(score,co2_used,used_time) # lopettaa pelin puuttuu pelin loppuun kuuluvat funktiot
     exit()

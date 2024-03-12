@@ -7,17 +7,16 @@ from quizv2 import question_query_from_database
 def help_screen(airplane_model, co2_used,used_time,distance,score):
     commands = ['quiz','tutorial', 'player info', 'quit', 'credits', '1', '2', '3', '4', '5']
 
-    print(f"""
-{Fore.GREEN}
-Here's a list of all available commands{Fore.WHITE}:
-{Fore.CYAN}1{Fore.WHITE}. {Fore.CYAN}{Style.BRIGHT}Play game (quiz){Style.NORMAL}
-{Fore.BLUE}2{Fore.WHITE}. {Fore.BLUE}Tutorial
-{Fore.MAGENTA}3{Fore.WHITE}. {Fore.MAGENTA}Player info
-{Fore.RED}4{Fore.WHITE}. {Fore.RED}Quit{Fore.WHITE}
-{Fore.YELLOW}5{Fore.WHITE}. {Fore.YELLOW}Credits {Fore.RESET}
-        
-        """)
-    help_command = input(f"{Fore.GREEN}Enter command (1-5){Fore.WHITE}:{Fore.RESET}\n").lower()
+    
+    print(f"{Fore.GREEN}Here's a list of all available commands{Fore.WHITE}:")
+    print(f"{Fore.CYAN}1{Fore.WHITE}. {Fore.CYAN}{Style.BRIGHT}Play game (quiz){Style.NORMAL}")
+    print(f"{Fore.BLUE}2{Fore.WHITE}. {Fore.BLUE}Tutorial")
+    print(f"{Fore.MAGENTA}3{Fore.WHITE}. {Fore.MAGENTA}Player info")
+    print(f"{Fore.RED}4{Fore.WHITE}. {Fore.RED}Quit{Fore.WHITE}")
+    print(f"{Fore.YELLOW}5{Fore.WHITE}. {Fore.YELLOW}Credits {Fore.RESET}")
+
+
+    help_command = input(f"\n{Fore.GREEN}Enter command (1-5){Fore.WHITE}:{Fore.RESET}\n").lower()
     if help_command not in commands:
         print("Invalid command! Please use one of the commands listed above.")
     elif help_command == 'quiz' or help_command == "1":
