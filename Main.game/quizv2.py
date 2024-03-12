@@ -1,6 +1,7 @@
 import random
 import mysql.connector
 from colorama import Fore,init
+import endgame
 
 connection = mysql.connector.connect(
     host="localhost",
@@ -12,8 +13,7 @@ connection = mysql.connector.connect(
 )
 
 
-def question_query_from_database():
-    
+def question_query_from_database(co2_used,used_time,distance,score):
     '''
     Tässä funktiossa ensin arvotaan id numero, käyttäen 
     Sitten haetaan yksitellen tietokannasta tässä järjestyksessä: kysymys, oikea vastaus ja neljä väärää vastausta, alussa arvotulla id numerolla.
@@ -81,8 +81,8 @@ def question_query_from_database():
     # Muussa tapauksessa tulostetaan oikea vastaus ja peli loppuu.
     else:
         print(f"{Fore.RED}\nWRONG! {Fore.YELLOW}The correct answer was: {correct_answer}.{Fore.RESET}")
-        print(f"{Fore.GREEN}Game over! Thank you for playing!\n{Fore.RESET}")
-        return False # Palautetaan False, jos vastaus on väärin.
+        endgame.end_game(score,co2_used,used_time)
+        exit()
 
 # testi_piste_lista = []
 

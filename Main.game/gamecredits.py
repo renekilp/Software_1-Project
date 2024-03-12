@@ -1,6 +1,6 @@
 
 from asciiartfunc import slowly_generate_print
-
+from colorama import Fore,init
 def game_credits_query():
 
     while True:
@@ -11,6 +11,7 @@ def game_credits_query():
             return 1
         elif game_credits_input == "no" or game_credits_input == "n":
             print("\nOh man :(")
+            print(f"{Fore.GREEN}Thank you for playing!\n{Fore.RESET}")
             return False
         elif game_credits_input == "secret" or "easteregg":
             print("Secret airplane models: Peyman and Peltoniemi are open for use\n")

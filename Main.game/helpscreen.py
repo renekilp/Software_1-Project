@@ -21,7 +21,7 @@ def help_screen(airplane_model, co2_used,used_time,distance,score):
     if help_command not in commands:
         print("Invalid command! Please use one of the commands listed above.")
     elif help_command == 'quiz' or help_command == "1":
-        return question_query_from_database()
+        return question_query_from_database(co2_used,used_time,distance,score)
     elif help_command == 'tutorial' or help_command == "2":
         tutorial_screen()
     elif help_command == 'player info' or help_command == "3":
