@@ -1,5 +1,6 @@
 README.md kirjoittanut Onni Kivinen
 # Ohjelmisto 1-kurssin Projekti
+![alt text](image.png)
 
 Tämä on Metropolian Tieto- ja Viestintätekniikan Ohjelmisto 1-kurssin lentopeliprojektin repository, joka on toteutettu kurssin loppuprojektina. 
 Projektin tarkoituksena oli kehittää yksinkertainen lentopeli, jossa käytetään python ohjelmointikieltä sekä hyödynnetään tietokantaa.
