@@ -55,10 +55,10 @@ def travel_co2(user_airport, airplane_model):
     distance = geodesic(next_coordinates, current_coordinates).kilometers
     co2 = 0
     flight_time = 0
-    if airplane_model == 2:  # airbus a320
+    if airplane_model == 2:  # boeing 737
         co2 = distance * 0.0625  # kg per kilometer
         flight_time = distance / 830  # km/h
-    elif airplane_model == 1:  # boeing 737
+    elif airplane_model == 1:  # airbus a320
         co2 = distance * 0.061
         flight_time = distance / 845
     elif airplane_model == 3:  # saab ja37 viggen
