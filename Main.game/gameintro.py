@@ -37,7 +37,7 @@ def airplane_model_choice():
     Jos käyttäjä antaa väärän syötteen, loopilla pyydetään syöttämään uudelleen.
     """
     while True: 
-        airplane_model_input = input(f"{Fore.GREEN}Choose your airplane model or type in {Style.BRIGHT}'info'{Style.RESET_ALL}\n {Fore.CYAN}1{Fore.WHITE}. {Fore.CYAN}Boeing 737 \n {Fore.MAGENTA}2{Fore.WHITE}. {Fore.MAGENTA}Airbus A320 \n {Fore.RED}3{Fore.WHITE}. {Fore.RED}Saab JA 37 Viggen{Fore.RESET}{Style.RESET_ALL} \n")
+        airplane_model_input = input(f"{Fore.GREEN}Choose your airplane model or type in {Fore.WHITE}info{Style.RESET_ALL}\n {Fore.CYAN}1{Fore.WHITE}. {Fore.CYAN}Boeing 737 \n {Fore.MAGENTA}2{Fore.WHITE}. {Fore.MAGENTA}Airbus A320 \n {Fore.RED}3{Fore.WHITE}. {Fore.RED}Saab JA 37 Viggen{Fore.RESET}{Style.RESET_ALL} \n")
         
         if airplane_model_input == "info":
             print(f"\n{Fore.GREEN}---------------------------------------------------------------------------------------------------------------------")
