@@ -43,8 +43,8 @@ def airplane_model_choice():
         if airplane_model_input == "info":
             
             print(f"\n{Fore.GREEN}-------------------------------------------------------------------------------")
-            print(f"{Fore.CYAN}The Airbus A320 {Fore.GREEN}family are narrow-body airliners designed and produced by Airbus.")
             print(f"{Fore.MAGENTA}The Boeing 737 {Fore.GREEN}is a narrow-body aircraft produced by Boeing Commercial Airplanes at its Renton Factory in Washington.")
+            print(f"{Fore.CYAN}The Airbus A320 {Fore.GREEN}family are narrow-body airliners designed and produced by Airbus.")
             print(f"{Fore.RED}The Saab 37 Viggen {Fore.GREEN}is a retired Swedish single-seat, single-engine, short-medium range combat aircraft.")
             print("-------------------------------------------------------------------------------")
             print(Style.RESET_ALL + Fore.RESET + Back.RESET)   
