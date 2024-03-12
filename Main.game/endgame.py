@@ -14,4 +14,5 @@ def end_game(score,co2_used,used_time):
     else:
         gamecredits.game_credits_query()
         print("Thanks for playing!")
-        exit()
+
+    exit()
