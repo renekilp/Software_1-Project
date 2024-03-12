@@ -52,7 +52,6 @@ def tutorial_screen(airplane_model, co2_used,used_time,distance,score):
     """
     slowly_generate_print(tut_text, delay=0.015)
     print(Style.RESET_ALL)
-    return help_screen(airplane_model, co2_used,used_time,distance,score)
 
 
 def player_info(airplane_model, co2_used,used_time,distance,score):
@@ -83,7 +82,6 @@ def player_info(airplane_model, co2_used,used_time,distance,score):
     """)
     slowly_generate_print(plinfo_text, delay=0.015)
     print(Style.RESET_ALL)
-    return help_screen(airplane_model, co2_used,used_time,distance,score)
 
 def quit_game():
     print(f"{Fore.YELLOW}You chose to end the game. Farewell!")
