@@ -1,5 +1,4 @@
 import time
-import sys, subprocess
 from colorama import Fore, Style
 
 #       funktion tarkoitus luoda feikki latauspalkki
