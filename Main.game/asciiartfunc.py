@@ -2,6 +2,7 @@ from art import *
 from colorama import Fore, Back, Style
 import time
 
+
 #   funktion tarkoitus muuttaa haluttu teksti suoraan haluttuun ascii muotoon
 def text_to_ascii(text, style='standard'):
     #   Korvaa parametri 'text' halutulla tekstillä
