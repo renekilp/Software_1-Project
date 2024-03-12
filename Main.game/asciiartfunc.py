@@ -38,6 +38,7 @@ def playerinfo_ascii():
 
 
 #   tätä samaa funktioo käytetään pelin alussa feikki lautauspalkissa
+#   tulostaa siis halutun tekstin halutulla nopeudella kirjain kerrallaan
 #   loin sen tänne uusiks jos haluutte käyttää
 def slowly_generate_print(text, delay=0.1):
     #   korvaa text halutulla tekstillä
