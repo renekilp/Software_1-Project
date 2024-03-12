@@ -22,7 +22,6 @@ def help_screen(airplane_model, co2_used,used_time,distance,score):
         print("Invalid command! Please use one of the commands listed above.")
     elif help_command == 'quiz' or help_command == "1":
         return question_query_from_database()
-
     elif help_command == 'tutorial' or help_command == "2":
         tutorial_screen()
     elif help_command == 'player info' or help_command == "3":
@@ -77,7 +76,7 @@ def player_info(airplane_model, co2_used,used_time,distance,score):
     Your current score is: {score}
     Your current flown distance is: {distance:.2f} kilometers
     Your current fly time is: {used_time / 24:.2f} 
-    Your current co2 usage is: {co2_used / 1000:2.f} kilogramms
+    Your current co2 usage is: {co2_used / 1000:.2f} kilogramms
     
     Wowee! You are flying like a real captain! Let's push that score up.
     
