@@ -76,7 +76,8 @@ def top_players(): #hakee top 5 pelaajaa score taulusta
     cursor = connection.cursor()
     query = query_database(sql)
     num = 1
+    print("Parhaat pelaajat:")
     for i in query: # printtaa ne järkevässä järjestyksessä järjestysnumeroiden kanssa
-        print(f"Parhaat pelaajat: \n{num}.{i[0]}, {i[1]}")
+        print(f"\n{num}.{i[0]}, {i[1]}")
         num += 1
 
