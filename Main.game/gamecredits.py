@@ -9,12 +9,12 @@ def game_credits_query():
         if game_credits_input == "yes" or game_credits_input == "y":
             print("""Spaghetti coders:
             
-    Eemil Nurmi 
-    Onni Kivinen 
-    Rene Kilpeläinen 
-    Patrik Skogberg
+Eemil Nurmi 
+Onni Kivinen 
+Rene Kilpeläinen 
+Patrik Skogberg
             
-    Thanks For Playing!!!"""
+Thanks For Playing!!!"""
             )
             return 1
         elif game_credits_input == "no" or game_credits_input == "n":
