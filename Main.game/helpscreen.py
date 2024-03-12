@@ -53,6 +53,7 @@ def tutorial_screen():
     """
     slowly_generate_print(tut_text, delay=0.015)
     print(Style.RESET_ALL)
+    return help_screen()
 
 
 def player_info():
@@ -72,6 +73,7 @@ def player_info():
     """)
     slowly_generate_print(plinfo_text, delay=0.015)
     print(Style.RESET_ALL)
+    return help_screen()
 
 def quit_game():
     print(f"{Fore.YELLOW}You chose to end the game. Farewell!")
