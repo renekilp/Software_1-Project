@@ -22,7 +22,6 @@ if gameintro.starting_screen(): # aloitetaanko peli vai ei
     airplane_model = gameintro.airplane_model_choice() # kysyy ja tallentaa lentokoneenyes
     while game_going:
         print(f"You are at {current_airport[0]}") #printtaa millä lentokentällä olet
-
         if help_screen(str(airplane_model), co2_used,used_time,distance,score):
             score += 1     # lisää pisteen oikein vastatusta kysymyksestä
             travel_info = gamesql.travel_co2(current_airport, airplane_model) # lentoon liittyvät tiedot
