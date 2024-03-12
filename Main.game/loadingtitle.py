@@ -1,5 +1,5 @@
 import time
-from colorama import Fore, Style
+from colorama import *
 
 #       funktion tarkoitus luoda feikki latauspalkki
 #       parametria muuttamalla voidaan itse määrittää tulostuksen nopeus
