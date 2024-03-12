@@ -1,6 +1,7 @@
 import mysql.connector
 import random
 from geopy.distance import geodesic
+from colorama import Fore, Back, Style
 
 connection = mysql.connector.connect(
     host="localhost",
@@ -39,7 +40,7 @@ def new_score(player_name,score): #tallentaa uuden pistemäärän tietokantaan
     cursor = connection.cursor()
     cursor.execute(sql)
     if cursor.rowcount == 1:
-        print("New score added")
+        print(f"{Fore.GREEN}Your Score has been added to the database\n{Fore.RESET}")
 
 def random_fly(): #lennättää pelaajan uudelle random lentokentälle
     possible_airports = search_large_airports()
@@ -76,8 +77,8 @@ def top_players(): #hakee top 5 pelaajaa score taulusta
     cursor = connection.cursor()
     query = query_database(sql)
     num = 1
-    print("Parhaat pelaajat:")
+    print("Best Players:\n")
     for i in query: # printtaa ne järkevässä järjestyksessä järjestysnumeroiden kanssa
-        print(f"{num}.{i[0]}, {i[1]}\n")
+        print(f"{num}. {i[0]}, {i[1]}\n")
         num += 1
 
