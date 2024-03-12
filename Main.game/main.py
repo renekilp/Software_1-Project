@@ -41,4 +41,5 @@ if gameintro.starting_screen(): # aloitetaanko peli vai ei
                 print(f"{Fore.YELLOW}Invalid input entered")
 
         else:
+
             game_going = end_game(score,co2_used,used_time) # lopettaa pelin puuttuu pelin loppuun kuuluvat funktiot
