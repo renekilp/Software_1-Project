@@ -58,15 +58,26 @@ def tutorial_screen():
 
 def player_info(airplane_model, co2_used,used_time,distance,score):
     playerinfo_ascii()
+    if airplane_model == 1:
+        airplane_model = "Boeing 737"
+    elif airplane_model == 2:
+        airplane_model =  "Airbus a320"
+    elif airplane_model == 3:  # saab ja37 viggen
+        airplane_model = "Saab JA37 Viggen"
+    elif airplane_model == "Peltoniemi" or airplane_model == "Peyman":
+        airplane_model = "Peltoniemi" or "Peyman"
+    else:
+        airplane_model = "Invalid airplane model"
+
     plinfo_text = (f"""{Fore.GREEN}
     Welcome BOSS! I've been tracking some of your progress...
     
     The plane you selected is: {airplane_model}
     
     Your current score is: {score}
-    Your current flown distance is: {distance}
-    Your current fly time is: {used_time}
-    Your current co2 usage is: {co2_used}
+    Your current flown distance is: {distance:.2f} kilometers
+    Your current fly time is: {used_time / 24:.2f} 
+    Your current co2 usage is: {co2_used / 1000:2.f} kilogramms
     
     Wowee! You are flying like a real captain! Let's push that score up.
     
