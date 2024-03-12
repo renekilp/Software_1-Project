@@ -32,7 +32,7 @@ if gameintro.starting_screen(): # aloitetaanko peli vai ei
             used_time += travel_info[2]
             current_airport = travel_info[3]
 
-            continue_game = input(f"{Fore.GREEN}Do you want to continue? (y/n):\n{Fore.RESET}").lower()
+            continue_game = input(f"{Fore.GREEN}Do you want to continue? {Fore.WHITE}({Fore.CYAN}y{Fore.WHITE}/{Fore.RED}n{Fore.WHITE}) \n").lower()
             if continue_game == "y":
                 game_going = True
             elif continue_game == "n":

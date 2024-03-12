@@ -8,16 +8,16 @@ def help_screen(airplane_model, co2_used,used_time,distance,score):
     commands = ['quiz','tutorial', 'player info', 'quit', 'credits', '1', '2', '3', '4', '5']
 
     print(f"""
-{Fore.GREEN}Welcome to the help screen!
+{Fore.GREEN}
 Here's a list of all available commands:
-    1. quiz
-    2. tutorial
-    3. player info
-    4. quit
-    5. credits
+1. Play game (quiz)
+2. Tutorial
+3. Player info
+4. Quit
+5. Credits
         
         """)
-    help_command = input("Enter command\n").lower()
+    help_command = input("Enter command (1-5):\n").lower()
     if help_command not in commands:
         print("Invalid command! Please use one of the commands listed above.")
     elif help_command == 'quiz' or help_command == "1":
