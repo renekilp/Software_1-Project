@@ -78,6 +78,6 @@ def top_players(): #hakee top 5 pelaajaa score taulusta
     num = 1
     print("Parhaat pelaajat:")
     for i in query: # printtaa ne järkevässä järjestyksessä järjestysnumeroiden kanssa
-        print(f"\n{num}.{i[0]}, {i[1]}")
+        print(f"{num}.{i[0]}, {i[1]}\n")
         num += 1
 
