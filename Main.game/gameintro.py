@@ -3,7 +3,7 @@
 
 import time
 from colorama import Fore, Back, Style
-from asciiartfunc import welcome_text_to_ascii # Tuodaan asciiartfunc.py tiedostosta welcome_text_to_ascii() funktio tähän tiedostoon.
+#from asciiartfunc import welcome_text_to_ascii # Tuodaan asciiartfunc.py tiedostosta welcome_text_to_ascii() funktio tähän tiedostoon.
 
 #{Fore.VÄRI} = Tekstin väri
 #{Back.VÄRI} = Taustan väri
