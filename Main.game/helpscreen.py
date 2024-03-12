@@ -69,17 +69,17 @@ def player_info(airplane_model, co2_used,used_time,distance,score):
     else:
         airplane_model = "Invalid airplane model"
 
-    plinfo_text = (f"""{Fore.GREEN}
-    Welcome BOSS! I've been tracking some of your progress...
+    plinfo_text = (f"""
+Welcome BOSS! I've been tracking some of your progress...
     
-    The plane you selected is: {airplane_model}
+The plane you selected is: {airplane_model}
     
-    Your current score is: {score}
-    Your current flown distance is: {distance:.2f} kilometers
-    Your current fly time is: {used_time / 24:.2f} days
-    Your current co2 usage is: {co2_used:.2f} gramms
+Your current score is: {score}
+Your current flown distance is: {distance:.2f} kilometers
+Your current fly time is: {used_time / 24:.2f} days
+Your current co2 usage is: {co2_used:.2f} gramms
     
-    Wowee! You are flying like a real captain! Let's push that score up.
+Wowee! You are flying like a real captain! Let's push that score up.
     
     """)
     slowly_generate_print(plinfo_text, delay=0.015)
