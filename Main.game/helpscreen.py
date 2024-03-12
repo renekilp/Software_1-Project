@@ -10,6 +10,7 @@ def help_screen(airplane_model, co2_used,used_time,distance,score):
     print(f"""
 {Fore.GREEN}
 Here's a list of all available commands:
+
 1. Play game (quiz)
 2. Tutorial
 3. Player info
