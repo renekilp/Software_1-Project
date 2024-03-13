@@ -16,7 +16,6 @@ def game_credits_query():
             return 1
         elif game_credits_input == "no" or game_credits_input == "n":
             print("\nOh man :(")
-            print(f"{Fore.GREEN}Thank you for playing!\n{Fore.RESET}")
             return False
         elif game_credits_input == "secret" or "easteregg":
             print("\nSecret airplane models: Peyman and Peltoniemi are open for use\n")

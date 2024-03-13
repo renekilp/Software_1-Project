@@ -46,9 +46,6 @@ def tutorial_screen(airplane_model, co2_used,used_time,distance,score):
     
     After the game ends, your will be scored based on the points, distance and co2 usage.
     How far can you reach without making a mistake? Let's find out! YOU GOT THIS BOSS!
-    
-    Remember that you can always use the 'help' command to see all the available commands!
-    (even play this short tutorial again if you so desire.)
     """
     slowly_generate_print(tut_text, delay=0.015)
     print(Style.RESET_ALL)
