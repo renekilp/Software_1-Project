@@ -15,6 +15,7 @@ def end_game(score,co2_used,used_time,distance):
         player_input = input(f"\n{Fore.GREEN}Would you like to save your score to the database? {Fore.WHITE}({Fore.CYAN}y{Fore.WHITE}/{Fore.RED}n{Fore.WHITE}){Fore.RESET}\n").lower()
         if player_input == "y":
             gamesql.new_score(player_name=input(f"{Fore.GREEN}Enter your name:{Fore.RESET}\n"),score = score)
+            gamecredits.game_credits_query()
             break
         elif player_input == "n":
             gamecredits.game_credits_query()
