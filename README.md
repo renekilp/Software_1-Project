@@ -28,12 +28,17 @@ Projektin tarkoituksena oli kehittää yksinkertainen lentopeli, jossa käytetä
    5. Aja komento:  ```source C:/Users/käyttäjä/Downloads/lentopeli.sql;``` <-- (muokkaa reitti siten, minne olet lentopeli.sql tiedoston ladannut.)
 
 ### 3. Tarvittavat kirjastot:
+ (Jos sinulla on jo flight_game niminen tietokanta, niin mene kansioon "Database" ja aja python tiedostot: ```highscore_into_database.py``` ja ```KYSYMYSTAULUNLUONTI.py```.) Ne lisäävät valmiiseen flight_game tietokantaan tarvittavat taulut peliämme varten.) 
+ 
+ Seuraavaksi suorita:
 - Kirjoita IDE:n terminaaliin seuraavat komennot:
 - ```pip install mysql-connector```
 - ```pip install colorama```
 - ```pip install art```
 - ```pip install geopy```
 - Tai lataa edelliset kirjastot "käsin" IDE:n laajennukset osiosta.
+
+
 
 ### 4. Pelin suorittaminen
 - Suorita "main.py" tiedosto, joka löytyy "main.game" kansiosta.
