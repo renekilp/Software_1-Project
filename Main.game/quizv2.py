@@ -81,7 +81,7 @@ def question_query_from_database(co2_used,used_time,distance,score):
     # Muussa tapauksessa tulostetaan oikea vastaus ja peli loppuu.
     else:
         print(f"{Fore.RED}\nWRONG! {Fore.YELLOW}The correct answer was: {correct_answer}.{Fore.RESET}")
-        endgame.end_game(score,co2_used,used_time)
+        endgame.end_game(score,co2_used,used_time,distance)
         exit()
 
 # testi_piste_lista = []

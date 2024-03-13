@@ -4,10 +4,10 @@ from colorama import Fore,init
 init(autoreset=True)
 
 
-def end_game(score,co2_used,used_time):
+def end_game(score,co2_used,used_time,distance):
     print(f"\n{Fore.GREEN}---------------------------------------------------------------------------------------------------------------------{Fore.RESET}")
     print(f"{Fore.GREEN}                                                Game over!\n{Fore.RESET}")
-    print(f"{Fore.GREEN}Your Score: {score}\nCO2 Consumed: {co2_used:.2f} Grams.\nFlight time: {used_time / 24:.2f} Days.{Fore.RESET}")
+    print(f"{Fore.GREEN}Your Score: {score}\nCO2 Consumed: {co2_used:.2f} Grams.\nFlight time: {used_time / 24:.2f} Days.\nFlown distance: {distance:.2f} Kilometers{Fore.RESET}")
     print(f"{Fore.GREEN}---------------------------------------------------------------------------------------------------------------------{Fore.RESET}")
 
     gamesql.top_players()

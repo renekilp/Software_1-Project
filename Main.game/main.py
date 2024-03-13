@@ -37,7 +37,7 @@ if gameintro.starting_screen(): # aloitetaanko peli vai ei
                     game_going = True
                     break
                 elif continue_game == "n":
-                    game_going = end_game(score,co2_used,used_time)
+                    game_going = end_game(score,co2_used,used_time,distance)
                 else:
                     print(f"{Fore.YELLOW}Invalid input, please try again:{Fore.RESET}")
 else:
