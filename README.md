@@ -32,6 +32,7 @@ Projektin tarkoituksena oli kehittää yksinkertainen lentopeli, jossa käytetä
 - ```pip install mysql-connector```
 - ```pip install colorama```
 - ```pip install art```
+- ```pip install geopy```
 - Tai lataa edelliset kirjastot "käsin" IDE:n laajennukset osiosta.
 
 ### 4. Pelin suorittaminen
