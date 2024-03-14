@@ -59,8 +59,8 @@ def player_info(airplane_model, co2_used,used_time,distance,score):
         airplane_model =  "Airbus a320"
     elif airplane_model == "3":
         airplane_model = "Saab JA37 Viggen"
-    elif airplane_model == "Peltoniemi" or airplane_model == "Peyman":
-        airplane_model = "Peltoniemi" or "Peyman"
+    elif airplane_model == "Matti" or airplane_model == "Peyman":
+        airplane_model = "Matti" or "Peyman"
     else:
         airplane_model = "Invalid airplane model"
 
