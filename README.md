@@ -1,56 +1,55 @@
-README.md kirjoittanut Onni Kivinen
-# Ohjelmisto 1-kurssin Projekti
+# Software 1 Course Project
 ![alt text](image.png)
 
-Tämä on Metropolian Tieto- ja Viestintätekniikan Ohjelmisto 1-kurssin lentopeliprojektin repository, joka on toteutettu kurssin loppuprojektina. 
-Projektin tarkoituksena oli kehittää yksinkertainen lentopeli, jossa käytetään python ohjelmointikieltä sekä hyödynnetään tietokantaa.
+This is the repository for the flight game project for the Software 1 course at Metropolia University of Applied Sciences' Information and Communication Technology program, created as the final project for the course. The purpose of the project was to develop a simple flight game using the Python programming language and incorporating a database.
 
-###    Projektin kehittäjinä:
+###    Project Developers:
 - Eemil Nurmi
 - Rene Kilpeläinen
 - Onni Kivinen
 - Patrik Skogberg
-## Toiminta ohjeet pelin ajamiseen 
+## Instructions for Running the Game
 
-- Tässä kohdassa on ohjeet pelin ajamiseen niin sanotusti "tyhjältä pyödältä". 
-- Jos sinulla on jo flight_game tietokanta, siirry kohtaan: (3. Tarvittavat kirjastot) 
-- (Huom!) Käyttäjän ja Salasanan tulee olla 'root', sekä portti: 3306.
-### 1. Mariadb MSI-paketin lataaminen https://mariadb.org/download/
-  - Aja asennusohjelma oletuksilla.
-  - Käytä kohdissa 'Käyttäjä' ja 'Salasana' molemmissa 'root'. 
-  - Aseta kohtaan 'Portti' luku: 3306.
+- This section provides instructions for running the game from scratch. 
+- If you already have the flight_game database, proceed to: (3. Required Libraries) 
+- (Note!) The user and password must be 'root', and the port: 3306.
+  
+### 1. Downloading the MariaDB MSI package https://mariadb.org/download/
+  - Run the installer with default settings.
+  - Use 'root' for both 'User' and 'Password'. 
+  - Set 'Port' to: 3306.
 
-### 2. Lentopelin tietokannan luominen MariaDB:ssä
-   1. Lataa lentopeli.sql tiedosto, joka löytyy tämän repositoryn kansiosta "Database". 
-   2. Avaa MySQL Client (MariaDB) ja syötä salasana 'root'.
-   3. Luo tietokanta ``` create database flight_game;```
-   4. Käytä tietokantaa ```use flight_game;```
-   5. Aja komento:  ```source C:/Users/käyttäjä/Downloads/lentopeli.sql;``` <-- (muokkaa reitti siten, minne olet lentopeli.sql tiedoston ladannut.)
+### 2. Creating the Flight Game Database in MariaDB
+   1. Download the flight_game.sql file, which can be found in the "Database" folder of this repository.
+   2. Open the MySQL Client (MariaDB) and enter the password 'root'.
+   3. Create the database: ``` create database flight_game;```
+   4. Use the database: ```use flight_game;```
+   5. Run the command:  ```source C:/Users/käyttäjä/Downloads/lentopeli.sql;``` <-- (adjust the path to where you downloaded the flight_game.sql file.)
 
-### 3. Tarvittavat kirjastot:
-- Kirjoita IDE:n terminaaliin seuraavat komennot:
+### 3. Required Libraries:
+- Enter the following commands in your IDE's terminal:
 - ```pip install mysql-connector```
 - ```pip install colorama```
 - ```pip install art```
 - ```pip install geopy```
-- Tai lataa edelliset kirjastot "käsin" IDE:n laajennukset osiosta.
+- Or download the above libraries manually from your IDE's extensions section.
  
- (Jos sinulla on jo flight_game niminen tietokanta, niin mene kansioon "Database" ja aja python tiedostot: ```highscore_into_database.py``` ja ```KYSYMYSTAULUNLUONTI.py```.) Ne lisäävät valmiiseen flight_game tietokantaan tarvittavat taulut peliämme varten.) 
+ (If you already have a database named flight_game, go to the "Database" folder and run the Python files: ```highscore_into_database.py``` and ```KYSYMYSTAULUNLUONTI.py```.) They will add the necessary tables to the existing flight_game database for our game.)
 
 
-### 4. Pelin suorittaminen
-- Suorita "main.py" tiedosto, joka löytyy "main.game" kansiosta.
-- Peli nautintoja!
+### 4. Running the Game:
+- Run the "main.py" file, which is located in the "main.game" folder.
+- Enjoy the game!
 
 
 ## Tietokanta
-#### (Kuva) Tietokannan relaatiomallista 
+#### (Kuva) Relational model of the database 
 ![alt text](flight_game_relation_model.png)
 
-#### Taulu: questions-, ja high_score lisätty alkuperäiseen tietokantaan.
+#### Tables: questions- and high_score added to the original database.
 
-## Tietokannan sql-koodi
-##### Tietokannan sql-koodi ilman dataa.
+## Database SQL Code
+##### SQL code for the database without data.
 
 ```sql
 -- --------------------------------------------------------
