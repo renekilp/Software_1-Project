@@ -4,10 +4,11 @@
 This is the repository for the flight game project for the Software 1 course at Metropolia University of Applied Sciences' Information and Communication Technology program, created as the final project for the course. The purpose of the project was to develop a simple flight game using the Python programming language and incorporating a database.
 
 ###    Project Developers:
-- Eemil Nurmi
-- Rene Kilpeläinen
-- Onni Kivinen
-- Patrik Skogberg
+- [Eemil Nurmi](https://github.com/Scratch4u2)
+- [Rene Kilpeläinen](https://github.com/renekilp)
+- [Onni Kivinen](https://github.com/onnikiv)
+- [Patrik Skogberg](https://github.com/Skogbergp)
+  
 ## Instructions for Running the Game
 
 - This section provides instructions for running the game from scratch. 
